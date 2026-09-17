@@ -1,4 +1,4 @@
-The Purple Ball Project!
+The "No Grade Deducted" Project!
 
 SAWYER POWER
 
@@ -16,6 +16,11 @@ Thats about it!
 
 
 > ![Image of a program](topics/version-control/version-control-workflow/assets/images/programss.png)
+
+
+
+
+> [Check out my journal!](topics/version-control/version-control-workflow/journal.md)
 
 
 
