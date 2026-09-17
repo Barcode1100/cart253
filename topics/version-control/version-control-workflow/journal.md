@@ -12,3 +12,4 @@ even if it was just rudementary work.
 I hope anyone who visits my plain program/site can really appreiciate the simplisticness of the piece and take
 something out of it, even if its just: "i love how the colours hurt my eyes"
 
+> ![Image of a program](./assets/images/programss.png)
