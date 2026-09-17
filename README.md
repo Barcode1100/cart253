@@ -2,7 +2,7 @@ The Purple Ball Project!
 
 SAWYER POWER
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](http://127.0.0.1:5500/)
 
 
 
@@ -15,7 +15,7 @@ Thats about it!
 
 
 
-> ![Image of a program](./assets/images/programss.png)
+> ![Image of a program](topics/version-control/version-control-workflow/assets/images/programss.png)
 
 
 
