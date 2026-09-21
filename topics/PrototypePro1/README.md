@@ -8,6 +8,8 @@ Sawyer Power
 
 This is a small prototype of a Rainbow created using circles and ellipses. Very good. 
 
+[Read the Journal](https://github.com/Barcode1100/cart253/commit/aea86333f6d93919486189eb3bcc51d61864a338)
+
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
