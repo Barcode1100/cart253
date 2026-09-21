@@ -14,12 +14,13 @@ function draw() {
     drawGreen();
     drawBlue();
     drawPurple();
+    drawExtra();
 }
 
 function drawRed() {
     push();
     fill(225,0,0)
-    circle(200,350,400);
+    circle(200,325,400);
     pop();
 
 }
@@ -27,7 +28,7 @@ function drawRed() {
 function drawYellow() {
     push();
     fill("#fbe94b")
-    circle(200,400,400);
+    circle(200,375,400);
     pop();
 
 }
@@ -35,7 +36,7 @@ function drawYellow() {
 function drawGreen() {
     push();
     fill("#4fc74a")
-    circle(200,450,400);
+    circle(200,425,400);
     pop();
 
 }
@@ -43,7 +44,7 @@ function drawGreen() {
 function drawBlue() {
     push();
     fill("#1c26e1")
-    circle(200,500,400);
+    circle(200,475,400);
     pop();
 
 }
@@ -51,7 +52,15 @@ function drawBlue() {
 function drawPurple() {
     push();
     fill("#bd1ce1")
-    circle(200,550,400);
+    circle(200,525,400);
+    pop();
+
+}
+
+function drawExtra() {
+    push();
+    fill("#799fd8")
+    ellipse(200,525,300,300);
     pop();
 
 }
