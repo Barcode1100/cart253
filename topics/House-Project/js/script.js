@@ -22,7 +22,7 @@ function drawSquare() {
     fill(225,225,0)
     
     rectMode(CENTER)
-    let angle = frameCount * 0.00001;
+    let angle = frameCount * -0.0001;
   rotate(angle);
     
   
