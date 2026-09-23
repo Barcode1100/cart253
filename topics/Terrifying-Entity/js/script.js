@@ -3,33 +3,41 @@
 
 
 function setup() {
- createCanvas(400,400);
+
+    createCanvas(400,400);
 
 }
 
 function draw() {
-    background(1, 1, 1);
-    drawEllipse();
-    drawTriangle();
-   
+
+    background(1,1,1);
+
+    drawBody();
+    drawHead();
+    drawArms();
+    drawEyes();
+    drawMouth();
+
 }
 
-function drawEllipse() {
+function drawBody() {
+
     push();
-    fill(40,40,40)
-    ellipse(200,250,300,400);
+
+    fill(20,20,20);
+    ellipse(200,280,170,300);
+
     pop();
 
 }
 
-function drawTriangle() {
+function drawHead() {
+
     push();
-    fill(0,0,225)
- triangle(150, 425, 418, 30, 136, 225);
+
+    fill(10,10,10);
+    ellipse(200,100,90,100);
+
     pop();
 
 }
-
-
-
-
