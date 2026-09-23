@@ -41,3 +41,30 @@ function drawHead() {
     pop();
 
 }
+function drawArms() {
+
+    push();
+
+    stroke(10,10,10);
+    strokeWeight(20);
+
+    line(135,200,40,390);
+    line(265,200,360,390);
+
+    pop();
+
+}
+
+function drawEyes() {
+
+    push();
+
+    noStroke();
+    fill(255,255,255);
+
+    ellipse(185,95,12,25);
+    ellipse(220,105,12,25);
+
+    pop();
+
+}
