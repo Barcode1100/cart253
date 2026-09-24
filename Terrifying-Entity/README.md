@@ -2,7 +2,7 @@
 
 Sawyer Power
 
-[View this project online](https://github.io)
+[View this project online](./index.html)
 
 ## Description
 This project is meant to be very scary so i hope you guys are scared. 
