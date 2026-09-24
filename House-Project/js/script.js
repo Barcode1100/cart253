@@ -3,76 +3,76 @@
 
 
 function setup() {
- createCanvas(400,400);
+  createCanvas(400, 400);
 
 }
 
 function draw() {
-    background(114, 213, 255);
-    drawSquare();
-    drawTriangle();
-    drawRect();
-    drawWindow();
-    drawWin();
-    
+  background(114, 213, 255);
+  drawSquare();
+  drawTriangle();
+  drawRect();
+  drawWindow();
+  drawWin();
+
 }
 
 function drawSquare() {
-    push();
-    fill(225,225,0)
-    
-    rectMode(CENTER)
-    let angle = frameCount * -0.0001;
+  push();
+  fill(225, 225, 0)
+
+  rectMode(CENTER)
+  let angle = frameCount * -0.0001;
   rotate(angle);
-    
-  
-    square(200,300,200)
-  
-    pop();
+
+
+  square(200, 300, 200)
+
+  pop();
 
 }
 
 function drawTriangle() {
-    push();
-    fill(225,0,0) 
-    let angle = frameCount * 0.0001;
+  push();
+  fill(225, 0, 0)
+  let angle = frameCount * 0.0001;
   rotate(angle);
-    triangle(325,200,200,100,75,200)
-  
-    pop();
+  triangle(325, 200, 200, 100, 75, 200)
+
+  pop();
 
 }
 
 function drawRect() {
-    push();
-    fill(225,100,50) 
-    let angle = frameCount * 0.0001;
+  push();
+  fill(225, 100, 50)
+  let angle = frameCount * 0.0001;
   rotate(angle);
-    rect(175,320,50,80)
-  
-    pop();
+  rect(175, 320, 50, 80)
+
+  pop();
 
 }
 
 function drawWindow() {
-    push();
-    fill(20,100,225) 
-    let angle = frameCount * 0.0001;
+  push();
+  fill(20, 100, 225)
+  let angle = frameCount * 0.0001;
   rotate(angle);
-    square(125,240,50)
-  
-    pop();
+  square(125, 240, 50)
+
+  pop();
 
 }
 
 function drawWin() {
-    push();
-    fill(20,100,225) 
-     let angle = frameCount * 0.0001;
+  push();
+  fill(20, 100, 225)
+  let angle = frameCount * 0.0001;
   rotate(angle);
-    square(225,240,50)
-  
-    pop();
+  square(225, 240, 50)
+
+  pop();
 
 }
 
