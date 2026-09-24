@@ -1,6 +1,6 @@
-The "No Grade Deducted" Project!
+The First Project
 
-SAWYER POWER
+Sawyer Power
 
 [View this project online](http://127.0.0.1:5500/)
 
