@@ -27,7 +27,7 @@ function drawBody() {
     let x = random(-2,2);
     let y = random(-2,2);
 
-    fill(20,20,20);
+    fill(225,0,0);
     ellipse(200+x,280+y,170,300);
 
     pop();
