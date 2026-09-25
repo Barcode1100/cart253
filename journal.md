@@ -1,5 +1,7 @@
 |MY REFLECTIVE JOURNAL|
 
+PROJECT ONE: Prototype-Project
+
 This project was full of ups and downs and I personally do not even know if i did any of it correctly!
 Either way, correct or not, if i missed things or not - this project has been very useful to my overall 
 understanding of Github, even if i have used it before. 
@@ -13,3 +15,5 @@ I hope anyone who visits my plain program/site can really appreiciate the simpli
 something out of it, even if its just: "i love how the colours hurt my eyes"
 
 > ![Image of a program](./assets/images/programss.png)
+
+
