@@ -55,6 +55,8 @@ Completed alongside Nick!
 
 [Link To Mr Furious Challenge](./MrFurious/index.html)
 
+> ! [Image of Furious](./topics/version-control/version-control-workflow/assets/images/furious.png)
+
 
 > [Check out my journal!](./journal.md)
 
