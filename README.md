@@ -58,7 +58,7 @@ Completed alongside Nick!
 > ![Image of Furious](./topics/version-control/version-control-workflow/assets/images/furious.png)
 
 
-> [Check out my journal!](./journal.md)
+# > [Check out my journal!](./journal.md)
 
 
 
