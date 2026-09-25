@@ -56,8 +56,6 @@ Completed alongside Nick!
 [Link To Mr Furious Challenge](./MrFurious/index.html)
 
 
-
-
 > [Check out my journal!](./journal.md)
 
 
