@@ -21,7 +21,7 @@ Thats about it!
 
 
 
-> [Check out my journal!](topics/version-control/version-control-workflow/journal.md)
+> [Check out my journal!](journal.md)
 
 
 
