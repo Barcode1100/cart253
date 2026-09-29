@@ -1,8 +1,9 @@
 /**
- * Variable Prototype
+ * Intense Basketball
  * Sawyer Power
  * 
- * The Description is still unclear because i dont know what im doing yet
+ * You are not going to want to bounce
+  this basketball any longer
  */
 
 "use strict";
