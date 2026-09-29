@@ -10,25 +10,25 @@
 /**
  * Creating my canvas
 */
-let ballSize = 100
+
+let ball = {
+    x: 250,
+    y: 250,
+    size: 50
+}
 
 function setup() {
     createCanvas(500, 500);
-
 }
 
-
-/**
- * Drawing the background...
-*/
 function draw() {
+    background(177, 156, 219);
 
-    background(177, 156, 217)
+    // Move the bird
+    ball.x = ball.x + 1;
+    ball.y = ball.y - 2;
 
-    push();
-    noStroke();
-    fill(225, 0, 0)
-    circle(250, 250, ballSize)
-    pop();
+    // Draw the bird
+    ellipse(ball.x, ball.y, ball.size);
 
-} 
+}
