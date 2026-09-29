@@ -32,6 +32,8 @@ This prototype is a beautiful rainbow!
 
 > ![Image of a Program](./topics/version-control/version-control-workflow/assets/images/rainbow.png)
 
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/Rainbow-Prototype1/js/script.js)
+
 ### Prototype 2:
 
 [Link to House Prototype](./House-Project/index.html)
@@ -40,6 +42,8 @@ This prototype is a house with absolutely NOTHING wrong with it.
 
 > ![Image of a program](./topics/version-control/version-control-workflow/assets/images/house.png)
 
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/House-Project/js/script.js)
+
 ### Prototype 3:
 
 [Link To Terrifying Entity Prototype](./Terrifying-Entity/index.html)
@@ -47,6 +51,8 @@ This prototype is a house with absolutely NOTHING wrong with it.
 This prototype is the scariest thing you will EVER see.
 
 > ![Image of a program](./topics/version-control/version-control-workflow/assets/images/entity.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/Terrifying-Entity/js/script.js)
 
 
 ## VARIABLES CHALLENGE:
