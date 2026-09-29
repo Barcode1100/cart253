@@ -1,24 +1,34 @@
 /**
- * Title of Project
- * Author Name
+ * Variable Prototype
+ * Sawyer Power
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * The Description is still unclear because i dont know what im doing yet
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creating my canvas
 */
+let ballSize = 100
+
 function setup() {
+    createCanvas(500, 500);
 
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Drawing the background...
 */
 function draw() {
 
-}
+    background(177, 156, 217)
+
+    push();
+    noStroke();
+    fill(225, 0, 0)
+    circle(250, 250, ballSize)
+    pop();
+
+} 
