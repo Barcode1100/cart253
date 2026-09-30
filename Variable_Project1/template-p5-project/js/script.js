@@ -26,5 +26,17 @@ function setup() {
 
 function draw() {
 
+    background(220);
+
+    //stem of plant
+    line(200, 400, 200, 400 - plantHeight)
+
+    //leaves
+
+    ellipse(185, 380 - plantHeight, leafSize, leafSize);
+    ellipse(215, 350 - plantHeight, leafSize, leafSize);
+
+
+
 
 }
