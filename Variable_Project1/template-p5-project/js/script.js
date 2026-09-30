@@ -9,10 +9,13 @@
 
 let plantHeight = 20;
 //How tall the plant is
-let leafSize = 10;
+let leafSize = 5;
 // size of the leaf
 let growthSpeed = 0.3;
 // how fast it grows!
+let stemWidth = 10;
+// how fast the leaves grow!
+let leafGrowthSpeed = 0.05;
 
 /**
  * Creating my canvas
@@ -29,12 +32,28 @@ function draw() {
     background(220);
 
     //stem of plant
-    line(200, 400, 200, 400 - plantHeight)
+    stroke(40, 130, 50);
+    strokeWeight(stemWidth);
+
+    let stemTop = 380 - plantHeight;
+
+    line(200, 300, 200 - stemTop);
 
     //leaves
 
-    ellipse(185, 380 - plantHeight, leafSize, leafSize);
-    ellipse(215, 350 - plantHeight, leafSize, leafSize);
+    noStroke();
+    fill(50, 160, 70);
+
+    ellipse(190, stemTop + 10, leafSize, leafSize);
+    ellipse(210, stemTop + 30, leafSize, leafSize);
+
+    // making the plant grow!!
+
+    plantHeight += growthSpeed;
+
+    // leaves also grow
+
+    leafSize += leafGrowthSpeed
 
 
 
