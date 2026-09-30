@@ -10,7 +10,7 @@
 let plantHeight = 40;
 // How tall the plant is
 
-let leafSize = 10;
+let leafSize = 20;
 // Size of the leaf
 
 let growthSpeed = 0.2;
@@ -28,17 +28,32 @@ let leafGrowthSpeed = 0.15;
 
 function setup() {
     createCanvas(400, 400);
+
+
 }
 
 function draw() {
 
+
     background(100, 200, 225);
+
+    drawGround();
 
     // Find the top of the stem
     let stemTop = 380 - plantHeight;
 
+    // the ground
+    function drawGround() {
+        push();
+
+        fill("#117a3b");
+        rect(0, 350, 400, 50);
+
+        pop();
+    }
+
     // Stem of plant
-    stroke(10, 120, 50);
+    stroke(87, 57, 47);
     strokeWeight(stemWidth);
 
     line(200, 480, 200, stemTop);
@@ -47,12 +62,16 @@ function draw() {
     noStroke();
     fill(70, 160, 70);
 
-    ellipse(190, stemTop - 5, leafSize, leafSize);
-    ellipse(210, stemTop - 20, leafSize, leafSize);
+    ellipse(170, stemTop + 5, leafSize, leafSize);
+    ellipse(210, stemTop + 25, leafSize, leafSize);
 
-    // Making the plant grow!!
-    plantHeight += growthSpeed;
 
-    // Leaves also grow
-    leafSize += leafGrowthSpeed;
+    if (plantHeight < 250) {
+
+        // Making the plant grow!!
+        plantHeight += growthSpeed;
+
+        // Leaves also grow
+        leafSize += leafGrowthSpeed;
+    }
 }
