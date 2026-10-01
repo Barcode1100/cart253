@@ -2,15 +2,17 @@
  * Title of Project
  * Author Name
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Its a spooky eye
  */
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+//Declaring the eye parts
+
+let eyeSize = 150;
+let pulseSpeed = 1;
+let pupilSize = 50;
+
 function setup() {
 
 }
