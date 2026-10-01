@@ -82,7 +82,7 @@ Completed alongside Nick!
  You can't escape the eye...
 
  >![image of eye](./topics/version-control/version-control-workflow/assets/images/eyess.png)
- [Link to Eye](https://github.com/Barcode1100/cart253/blob/main/creepyeye_prototype/index.html)
+ [Link to Code](https://github.com/Barcode1100/cart253/blob/main/creepyeye_prototype/index.html)
 
  ### Prototype 3
 
@@ -92,7 +92,7 @@ Completed alongside Nick!
 
  >![image of moon](./topics/version-control/version-control-workflow/assets/images/moonss.png)
 
- [Link to Eye](https://github.com/Barcode1100/cart253/blob/main/moon_crashes/index.html)
+ [Link to Code](https://github.com/Barcode1100/cart253/blob/main/moon_crashes/index.html)
 
 
 # > [Check out my journal!](./journal.md)
