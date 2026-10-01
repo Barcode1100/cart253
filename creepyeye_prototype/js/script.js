@@ -46,10 +46,10 @@ function draw() {
 
     //The pupill
 
+    let pupilX = constrain(mouseX, 170, 230);
+    let pupilY = constrain(mouseY, 190, 210);
 
 
-    let pupilX = constrain(mouseX, 160, 240);
-    let pupilY = constrain(mouseY, 180, 220);
 
 
     fill(0);
