@@ -23,7 +23,7 @@ let fallSpeed = 0.2
 let shake = 0;
 
 function preload() {
-    moonImage = loadImage("");
+    moonImage = loadImage("./topics/assets/images/moon.png.png");
 }
 
 function setup() {
