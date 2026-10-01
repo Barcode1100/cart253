@@ -65,7 +65,7 @@ Completed alongside Nick!
 
 ## VARIABLE PROTOTYPES:
 
- ### Prototype 1
+### Prototype 1
 
  [Link to Tree](./A_Tree_Grows/template-p5-project/index.html)
 
@@ -75,7 +75,7 @@ Completed alongside Nick!
 
  [Link to Code](https://github.com/Barcode1100/cart253/blob/main/A_Tree_Grows/template-p5-project/js/script.js)
 
- ### Prototype 2
+### Prototype 2
 
  [Link to Creepyeye](./creepyeye_prototype/index.html)
 
@@ -84,7 +84,7 @@ Completed alongside Nick!
  >![image of eye](./topics/version-control/version-control-workflow/assets/images/eyess.png)
  [Link to Code](https://github.com/Barcode1100/cart253/blob/main/creepyeye_prototype/index.html)
 
- ### Prototype 3
+### Prototype 3
 
  [Link to Moon Crash](./moon_crashes/index.html)
 
