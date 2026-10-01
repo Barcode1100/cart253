@@ -102,7 +102,7 @@ Completed alongside Nick!
 
  >![Image of Circles](./topics/version-control/version-control-workflow/assets/images/circles.png)
 
- [Image of Circles](https://github.com/Barcode1100/cart253/blob/main/conditionals/js/script.js)
+ [Link to Code](https://github.com/Barcode1100/cart253/blob/main/conditionals/js/script.js)
 
 
 # > [Check out my journal!](./journal.md)
