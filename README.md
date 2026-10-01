@@ -82,7 +82,7 @@ Completed alongside Nick!
  You can't escape the eye...
 
  >![image of eye](./topics/version-control/version-control-workflow/assets/images/eyess.png)
- [Link to Code](https://github.com/Barcode1100/cart253/blob/main/creepyeye_prototype/index.html)
+ [Link to Code](https://github.com/Barcode1100/cart253/blob/main/creepyeye_prototype/js/script.js)
 
 ### Prototype 3
 
@@ -92,7 +92,17 @@ Completed alongside Nick!
 
  >![image of moon](./topics/version-control/version-control-workflow/assets/images/moonss.png)
 
- [Link to Code](https://github.com/Barcode1100/cart253/blob/main/moon_crashes/index.html)
+ [Link to Code](https://github.com/Barcode1100/cart253/blob/main/moon_crashes/js/script.js)
+
+ ## Conditionals Challenge
+
+ Completed alongside Nick!!
+
+ [Link to Program!](./conditionals/index.html)
+
+ >![Image of Circles](./topics/version-control/version-control-workflow/assets/images/circles.png)
+
+ [Image of Circles](https://github.com/Barcode1100/cart253/blob/main/conditionals/js/script.js)
 
 
 # > [Check out my journal!](./journal.md)
