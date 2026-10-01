@@ -2,7 +2,7 @@
 
 ## Sawyer Power
 
->![Image of Robert](./topics/version-control/version-control-workflow/assets/images/robert.webp)
+>![Image of Robert](./topics/version-control/version-control-workflow/assets/images/nerd.gif)
 
 ## First Project Prototype:
 
