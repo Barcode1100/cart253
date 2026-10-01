@@ -41,6 +41,10 @@ function draw() {
     fill(255);
     ellipse(200, 200, eyeSize, eyeSize * 0.6);
 
+    let pupilX = constrain(mouseX, 160, 240);
+    let pupilY = constrain(mouseY, 180, 220);
+
+
 
     // Pulse
     eyeSize += pulseSpeed;
