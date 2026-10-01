@@ -10,6 +10,7 @@
 
 // declarations for the size of the moon 
 // and how fast the moon falls and the canvas shakes
+let moonImage;
 
 let moonSize = 30;
 
@@ -21,6 +22,9 @@ let fallSpeed = 0.2
 
 let shake = 0;
 
+function preload() {
+    moonImage = loadImage("");
+}
 
 function setup() {
     createCanvas(400, 400);
@@ -44,8 +48,10 @@ function draw() {
         moonSize = moonSize + growSpeed;
         moonY = moonY + fallSpeed;
     }
-    fill(240, 240, 200);
-    ellipse(200, moonY, moonSize, moonSize);
+    // Moon png
+    imageMode(CENTER);
+    image(moonImage, 200, moonY, moonSize, moonSize);
+
 
     // Ground (extra wide and tall so the edges never show while shaking)
     fill(30, 120, 40);
