@@ -19,9 +19,10 @@ let pupilSize = 40;
 // How big the pupil is
 
 function setup() {
+    createCanvas(400, 400);
 
-} createCanvas(400, 400);
 
+}
 
 /**
  * the draw draws the eye for each frame
@@ -41,12 +42,22 @@ function draw() {
     fill(255);
     ellipse(200, 200, eyeSize, eyeSize * 0.6);
 
+    //The pupill
+
+
+
     let pupilX = constrain(mouseX, 160, 240);
     let pupilY = constrain(mouseY, 180, 220);
+
+
+    fill(0);
+    ellipse(pupilX, pupilY, pupilSize, pupilSize);
 
 
 
     // Pulse
     eyeSize += pulseSpeed;
-
 }
+
+
+
