@@ -19,7 +19,7 @@ let growSpeed = 0.5;
 
 let fallSpeed = 0.2
 
-let Shake = 0;
+let shake = 0;
 
 
 function setup() {
@@ -36,6 +36,18 @@ function draw() {
 
     //bigger moon means bigger shake!!
 
-    Shake = (moonSize - 30) * 0.05;
+    shake = (moonSize - 30) * 0.05;
 
+    translate(random(-shake, shake), random(-shake, shake));
+
+    if (moonSize < 350) {
+        moonSize = moonSize + growSpeed;
+        moonY = moonY + fallSpeed;
+    }
+    fill(240, 240, 200);
+    ellipse(200, moonY, moonSize, moonSize);
+
+    // Ground (extra wide and tall so the edges never show while shaking)
+    fill(30, 120, 40);
+    rect(-50, 300, 500, 150);
 }
