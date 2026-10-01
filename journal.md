@@ -26,6 +26,14 @@ For my last prototype, i wanted something more "abstract" so i delved into the r
 
 I did this alongside Nick which i found was a such a valuable learning experience. Nick has more coding expereince in languages like Javascript which i do not. We fed on each others ideas to create the masterpiece which is our rendition on Mr Furious. 
 
+## Variable Prototypes.
+
+This assignment was a slight boost in difficulty for me as again, i am completely new at javascript. However, i found i really enjoyed expanding on my earlier projects and adding movement and interactivity. Upon starting my first project, i found myself at a loss on what to do. Upon reading the assigment instructions, i decided i wanted to do something with a tad bit more meaning. I decided on created a digital tree and making it grow. The idea of watching a tree grow digitally but ignoring the process in the real world is silly to me. Anyone who hit refresh more than 3 times on my digital tree to watch it grow again should just go outside. Overall, the process was a more complicated one, working with constrains took some time to get used to but thanks to this project, the next two ran smoothly. 
+
+For my second prototype i wanted to do something with mouse interactivity. Again i went for something a little spooky where an eye pulsates as the pupil (whilst alternating from red to black) is constantly watching you (or more so the location of the mouse). This project, similarly to the terrifying entity, is meant to inact a bit of an uncomfortable feeling upon watching it for too long. This project wasnt too hard to figure out, i had trouble with getting the pupil to stay within the eye shape, however most of the issues were human errors or silly mistakes this time. I had a lot of fun working on this one!
+
+For my last prototype, i got inspiration from "The Legend of Zelda: Majora's Mask". A core mechanic of that game is a moon which over the course of 3 days gets larger and eventually crashes down into the world. Taking that idea, i created a rudementary moon (less creepy than the moon in the game since i fufilled my spooky criteria for this assignment) and then created a simplistic landscape. In this project, as the moon grows larger, the more the canvas shakes.
+
 
 
 
