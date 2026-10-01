@@ -49,10 +49,21 @@ function draw() {
     let pupilX = constrain(mouseX, 170, 230);
     let pupilY = constrain(mouseY, 190, 210);
 
+    // Fade between black and red
+    redAmount = redAmount + fadeSpeed;
+
+    //pupil colour shifts
+
+    if (redAmount > 1 || redAmount < 0) {
+        fadeSpeed = -fadeSpeed;
+    }
+
+    let pupilColor = lerpColor(color(0), color(255, 0, 0), redAmount);
 
 
 
-    fill(0);
+
+    fill(pupilColor);
     ellipse(pupilX, pupilY, pupilSize, pupilSize);
 
 
