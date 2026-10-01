@@ -18,19 +18,17 @@ let moonY = 80;
 
 let growSpeed = 0.5;
 
-let fallSpeed = 0.2
+let fallSpeed = 0.2;
 
 let shake = 0;
 
 function preload() {
-    moonImage = loadImage("./topics/assets/images/moon.png.png");
+    moonImage = loadImage("assets/images/moon.png.png");
 }
 
 function setup() {
     createCanvas(400, 400);
-
 }
-
 
 /**
  * draws landscape as the moon grows and falls, the shaking gets stronger.!
@@ -48,10 +46,15 @@ function draw() {
         moonSize = moonSize + growSpeed;
         moonY = moonY + fallSpeed;
     }
-    // Moon png
-    imageMode(CENTER);
-    image(moonImage, 200, moonY, moonSize, moonSize);
 
+    // Moon png
+    if (moonImage && moonImage.width > 1) {
+        imageMode(CENTER);
+        image(moonImage, 200, moonY, moonSize, moonSize);
+    } else {
+        fill(240, 240, 200);
+        ellipse(200, moonY, moonSize, moonSize);
+    }
 
     // Ground (extra wide and tall so the edges never show while shaking)
     fill(30, 120, 40);
