@@ -10,13 +10,15 @@
 //Declaring the eye parts
 
 let eyeSize = 150;
-// How big the eye is right now
 
 let pulseSpeed = 1;
-// How fast the eye grows or shrinks (it flips between 1 and -1)
 
 let pupilSize = 40;
-// How big the pupil is
+
+//variables to make eye fade from red to black
+let redAmount = 0;
+
+let fadeSpeed = 0.01;
 
 function setup() {
     createCanvas(400, 400);
@@ -55,8 +57,7 @@ function draw() {
 
 
 
-    // Pulse
-    eyeSize += pulseSpeed;
+
 }
 
 
