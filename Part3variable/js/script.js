@@ -8,10 +8,22 @@
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+// declarations for the size of the moon 
+// and how fast the moon falls and the canvas shakes
+
+let moonSize = 30;
+
+let moonY = 80;
+
+let growSpeed = 0.5;
+
+let fallSpeed = 0.2
+
+let Shake = 0;
+
+
 function setup() {
+    createCanvas(400, 400);
 
 }
 
