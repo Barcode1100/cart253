@@ -29,8 +29,13 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * draws landscape as the moon grows and falls, the shaking gets stronger.!
 */
 function draw() {
+    background(10, 10, 40);
+
+    //bigger moon means bigger shake!!
+
+    Shake = (moonSize - 30) * 0.05;
 
 }
