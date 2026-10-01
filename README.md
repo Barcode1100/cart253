@@ -68,7 +68,38 @@ Completed alongside Nick!
 
 
 
- This project uses [p5.js](https://p5js.org).
+ These projects use [p5.js](https://p5js.org).
+
+ ## VARIABLE PROTOTYPES:
+
+ ### Prototype 1
+
+ [Link to Tree](./A_Tree_Grows/template-p5-project/index.html)
+
+ If you want to watch a digital tree grow? Knock yourself out!
+
+ >[Image of Tree](./topics/version-control/version-control-workflow/assets/images/treess.png)
+
+ [Link to Code](https://github.com/Barcode1100/cart253/blob/main/A_Tree_Grows/template-p5-project/js/script.js)
+
+ ### Prototype 2
+
+ [Link to Creepyeye](./creepyeye_prototype/index.html)
+
+ You can't escape the eye...
+
+ >[image of eye](./topics/version-control/version-control-workflow/assets/images/eyess.png)
+ [Link to Eye](https://github.com/Barcode1100/cart253/blob/main/creepyeye_prototype/index.html)
+
+ ### Prototype 3
+
+ [Link to Moon Crash](./moon_crashes/index.html)
+
+ Based off of Majora's Mask, the moon crashes down!
+
+ >[image of moon](./topics/version-control/version-control-workflow/assets/images/moonss.png)
+
+ [Link to Eye](https://github.com/Barcode1100/cart253/blob/main/moon_crashes/index.html)
 
 
 
