@@ -32,7 +32,9 @@ This assignment was a slight boost in difficulty for me as again, i am completel
 
 For my second prototype i wanted to do something with mouse interactivity. Again i went for something a little spooky where an eye pulsates as the pupil (whilst alternating from red to black) is constantly watching you (or more so the location of the mouse). This project, similarly to the terrifying entity, is meant to inact a bit of an uncomfortable feeling upon watching it for too long. This project wasnt too hard to figure out, i had trouble with getting the pupil to stay within the eye shape, however most of the issues were human errors or silly mistakes this time. I had a lot of fun working on this one!
 
-For my last prototype, i got inspiration from "The Legend of Zelda: Majora's Mask". A core mechanic of that game is a moon which over the course of 3 days gets larger and eventually crashes down into the world. Taking that idea, i created a rudementary moon (less creepy than the moon in the game since i fufilled my spooky criteria for this assignment) and then created a simplistic landscape. In this project, as the moon grows larger, the more the canvas shakes.
+For my last prototype, i got inspiration from "The Legend of Zelda: Majora's Mask". A core mechanic of that game is a moon which over the course of 3 days gets larger and eventually crashes down into the world. Taking that idea, i created a rudementary moon (less creepy than the moon in the game since i fufilled my spooky criteria for this assignment) and then created a simplistic landscape. In this project, as the moon grows larger, the more the canvas shakes. This allowed me to focus on how the canvas and the moon could interact together. I found getting the moon to fall down at the same rate as the canvas shaking was the hardest part but i did get it in the end!
+
+
 
 
 
