@@ -47,10 +47,6 @@ function draw() {
 
     moveHand();
 
-    console.log(IsOverlapping());
-    if (IsOverlapping()) {
-        MovePuck();
-    }
 
     drawHand();
     drawBadButton();
@@ -67,15 +63,25 @@ function drawBadButton() {
         badButton.fill = "#ff0000"
 
     } else {
-        badButton.fill = "#000101"
+        badButton.fill = "#ff0000"
 
 
     }
     fill(badButton.fill);
-    ellipse(badButton.x, badButton.y, badButton.size)
+    ellipse(badButton.x, badButton.y, badButton.size);
     pop();
     ;
 
+
+}
+
+function checkBadButton() {
+    let d = dist(hand.x, hand.y, badButton.x, badButton.y);
+    if (d > ((hand.size / 2) + (badButton.size / 2))) {
+        return false;
+    } else {
+        return true;
+    }
 
 }
 
