@@ -8,10 +8,33 @@
 
 "use strict";
 
+const badButton = {
+    x: 200,
+    y: 200,
+    size: 100,
+    fill: "#ff0000"
+};
+
+const goodButton = {
+    x: 400,
+    y: 200,
+    size: 100,
+    fill: "#01e628"
+};
+
+const hand = {
+    x: undefined, // will be mouseX
+    y: undefined, // will be mouseY
+    size: 75,
+    fill: "#000000"
+};
+
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+    createCanvas(1000, 1000);
 
 }
 
