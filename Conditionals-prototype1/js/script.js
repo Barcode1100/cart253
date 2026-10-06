@@ -43,9 +43,9 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background("#5e70d7")
+    background("#5e70d7");
 
-    movehand();
+    moveHand();
 
     console.log(IsOverlapping());
     if (IsOverlapping()) {
@@ -55,6 +55,26 @@ function draw() {
     drawHand();
     drawBadButton();
     drawGoodButton();
+
+
+}
+
+function drawBadButton() {
+    push();
+    noStroke();
+
+    if (checkBadButton()) {
+        badButton.fill = "#ff0000"
+
+    } else {
+        badButton.fill = "#000101"
+
+
+    }
+    fill(badButton.fill);
+    ellipse(badButton.x, badButton.y, badButton.size)
+    pop();
+    ;
 
 
 }
@@ -73,10 +93,3 @@ function drawHand() {
     pop();
 }
 
-function drawBadButton() {
-    push();
-    noStroke();
-    fill(badButton.fill);
-    ellipse(badButton.x, badButton.y, badButton.size);
-    pop();
-}
