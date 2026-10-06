@@ -52,9 +52,23 @@ function draw() {
         MovePuck();
     }
 
-    drawbadButton();
-    drawgoodButton();
-    drawhand();
+    drawHand();
+    drawBadButton();
+    drawGoodButton();
+
 
 }
 
+function moveHand() {
+    hand.x = mouseX;
+    hand.y = mouseY;
+}
+
+
+function drawHand() {
+    push();
+    noStroke();
+    fill(hand.fill);
+    ellipse(hand.x, hand.y, hand.size);
+    pop();
+}
