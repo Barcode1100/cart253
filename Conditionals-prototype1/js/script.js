@@ -8,14 +8,14 @@
 
 "use strict";
 
-const badButton = {
+let badButton = {
     x: 200,
     y: 200,
     size: 100,
     fill: "#ff0000"
 };
 
-const goodButton = {
+let goodButton = {
     x: 400,
     y: 200,
     size: 100,
@@ -43,5 +43,13 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background("#5e70d7")
+
+    moveHand();
+
+    console.log(IsOverlapping());
+    if (IsOverlapping()) {
+        MovePuck();
+    }
 
 }
