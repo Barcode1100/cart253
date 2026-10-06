@@ -72,3 +72,11 @@ function drawHand() {
     ellipse(hand.x, hand.y, hand.size);
     pop();
 }
+
+function drawBadButton() {
+    push();
+    noStroke();
+    fill(badButton.fill);
+    ellipse(badButton.x, badButton.y, badButton.size);
+    pop();
+}
