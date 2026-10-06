@@ -45,11 +45,16 @@ function setup() {
 function draw() {
     background("#5e70d7")
 
-    moveHand();
+    movehand();
 
     console.log(IsOverlapping());
     if (IsOverlapping()) {
         MovePuck();
     }
 
+    drawbadButton();
+    drawgoodButton();
+    drawhand();
+
 }
+
