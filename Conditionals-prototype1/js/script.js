@@ -1,9 +1,10 @@
 /**
- * Title of Project
- * Author Name
+ * To Explode or to Not Explode 
+ * Sawyer Power
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * If you touch the green button then the world does not explode
+ * If you touch the red button then the world does explode.
+ * 
  */
 
 "use strict";
