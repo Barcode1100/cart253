@@ -1,17 +1,24 @@
 /**
- * Title of Project
- * Author Name
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Ghost Finder
+ * Sawyer Power
+ * 
+ * 
+ * 
  */
 
 "use strict";
 
+let ghost = {
+    x: 500,
+    y: 500,
+    size: 300
+};
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+    createCanvas(1000, 1000);
 
 }
 
