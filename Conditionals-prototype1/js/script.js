@@ -112,6 +112,15 @@ function checkBadButton() {
 
 }
 
+function checkGoodButton() {
+    let d = dist(hand.x, hand.y, goodButton.x, goodButton.y);
+    if (d > ((hand.size / 2) + (goodButton.size / 2))) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
 
 
 function moveHand() {
