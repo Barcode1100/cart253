@@ -104,6 +104,18 @@ Completed alongside Nick!
 
  [Link to Code](https://github.com/Barcode1100/cart253/blob/main/conditionals/js/script.js)
 
+ ## Conditionals Prototypes
+
+ ### Prototype 1
+
+[Link to "To Explode or to Not Explode](./ExplodeWorld-Project/index.html)
+
+Which button will you press?
+
+>![Image of Buttons](./topics/version-control/version-control-workflow/assets/images/explodess.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/ExplodeWorld-Project/js/script.js)
+
 
 # > [Check out my journal!](./journal.md)
 
