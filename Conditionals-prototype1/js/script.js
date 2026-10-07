@@ -131,9 +131,8 @@ function moveHand() {
 
 function drawHand() {
     push();
-    noStroke();
-    fill(hand.fill);
-    ellipse(hand.x, hand.y, hand.size);
+    imageMode(CENTER);
+    image(hand.image, hand.x, hand.y, hand.size, hand.size);
     pop();
 }
 
