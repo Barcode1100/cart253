@@ -41,6 +41,18 @@ function draw() {
     }
     else{
         background("#0b0b1a");
+        drawGlowingEyes();
     }
 
+    drawFlashlight();
+
+}
+
+function drawGhost(color) {
+    push();
+    noStroke();
+    fill(color);
+    ellipse(ghost.x, ghost.y, ghost.size);
+    rect(ghost.x - ghost.size / 2, ghost.y, ghost.size, ghost.size / 1.5);
+    pop();
 }
