@@ -9,25 +9,35 @@
 "use strict";
 
 let badButton = {
-    x: 200,
-    y: 200,
-    size: 100,
+    x: 300,
+    y: 500,
+    size: 150,
     fill: "#ff0000"
 };
 
 let goodButton = {
-    x: 400,
-    y: 200,
-    size: 100,
+    x: 700,
+    y: 500,
+    size: 150,
     fill: "#01e628"
 };
 
 const hand = {
     x: undefined, // will be mouseX
     y: undefined, // will be mouseY
-    size: 75,
-    fill: "#000000"
+    size: 100,
+    Image: undefined
 };
+
+let state = "playing";
+
+async function setup() {
+    createCanvas(1000, 1000);
+    hand.image = await loadImage("assets/images/hand.png");
+}
+
+
+
 
 
 /**
