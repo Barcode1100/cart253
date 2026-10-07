@@ -8,6 +8,8 @@
 
 "use strict";
 
+//declares my buttons
+
 let badButton = {
     x: 300,
     y: 500,
@@ -23,11 +25,13 @@ let goodButton = {
 };
 
 const hand = {
-    x: undefined, // will be mouseX
-    y: undefined, // will be mouseY
+    x: undefined,
+    y: undefined,
     size: 100,
     Image: undefined
 };
+
+// image setup
 
 let state = "playing";
 
@@ -41,7 +45,7 @@ async function setup() {
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * creates the canvas!
 */
 function setup() {
     createCanvas(1000, 1000);
@@ -50,17 +54,31 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Creates the screen and the text screen once a button is pushed
 */
 function draw() {
     background("#5e70d7");
 
-    moveHand();
+    if (state === "exploded") {
+        drawEndScreen("You exploded the world", "#ff0000");
+    }
+    else if (state === "safe") {
+        drawEndScreen("You did not explode the world", "#01e628");
+    }
+    else {
+        moveHand();
+        drawBadButton();
+        drawGoodButton();
+        drawHand();
 
+        if (checkBadButton()) {
+            state = "exploded";
+        }
+        else if (checkGoodButton()) {
+            state = "safe";
+        }
+    }
 
-    drawHand();
-    drawBadButton();
-    drawGoodButton();
 
 
 }
