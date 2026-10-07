@@ -135,4 +135,21 @@ function drawHand() {
     image(hand.image, hand.x, hand.y, hand.size, hand.size);
     pop();
 }
+// This is what makes the text appear
 
+function drawEndScreen(message, color) {
+    push();
+    background("#000000");
+    textAlign(CENTER, CENTER);
+    fill(color);
+    textSize(60);
+    text(message, width / 2, height / 2);
+    fill("#ffffff");
+    textSize(30);
+    text("Click to try again", width / 2, height / 2 + 100);
+    pop();
+}
+
+function mousePressed() {
+    state = "playing";
+}
