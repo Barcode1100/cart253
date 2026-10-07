@@ -35,22 +35,13 @@ const hand = {
 
 let state = "playing";
 
+//inserts image and creates the canvas
+
 async function setup() {
     createCanvas(1000, 1000);
     hand.image = await loadImage("assets/images/hand.png");
 }
 
-
-
-
-
-/**
- * creates the canvas!
-*/
-function setup() {
-    createCanvas(1000, 1000);
-
-}
 
 
 /**
