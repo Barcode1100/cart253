@@ -86,22 +86,21 @@ function draw() {
 function drawBadButton() {
     push();
     noStroke();
-
-    if (checkBadButton()) {
-        badButton.fill = "#ff0000"
-
-    } else {
-        badButton.fill = "#ff0000"
-
-
-    }
     fill(badButton.fill);
     ellipse(badButton.x, badButton.y, badButton.size);
     pop();
-    ;
 
 
 }
+
+function drawGoodButton() {
+    push();
+    noStroke();
+    fill(goodButton.fill);
+    ellipse(goodButton.x, goodButton.y, goodButton.size);
+    pop();
+}
+
 
 function checkBadButton() {
     let d = dist(hand.x, hand.y, badButton.x, badButton.y);
@@ -112,6 +111,8 @@ function checkBadButton() {
     }
 
 }
+
+
 
 function moveHand() {
     hand.x = mouseX;
