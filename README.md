@@ -126,6 +126,9 @@ Can you find the ghost? Do you want to find the ghost?
 
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/ghostfinder_prototype/js/script.js)
 
+### Prototype 3
+
+[Link to Pikachu](./)
 
 # > [Check out my journal!](./journal.md)
 
