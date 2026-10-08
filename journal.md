@@ -45,6 +45,10 @@ I began with a pretty simple idea using the idea of "overlap" and text screens s
 For my next prototype, i continued my trend of making something spooky. I believe this trend has started because i would love to make a horror game one day. Anyway, this project also features overlap dictations as well as "if statements" i am very familiar with if statements as for me they were the backbone of my computer science journey for two straight years. I also made a shape's opacity lower for the first time which i was not aware was an option in previous projects but the more you know i suppose. I calculated distances between shapes in correlation to my if statments to let the program now when it was time to switch the ghosts state (which consists of just changing colours or shape sizes etc.) This project was really fun and i believe its my most refined "spooky" project so far.
 
 For my last prototype i returned to familiar territory with the hopes of advancing my technique as well as memorising how to do it. I created a familiar face, Pikachu, (Please don't sue me Nintendo) and had the urge to pet him. Thus was born this prototype. To pet pikachu you must click on him and hold (to keep his happy face), also you can only pet his face not his ears. Not petting and moving your mouse away or around pikachu will cause him to move his eyes and follow you around. Mouse tracking was a concept i tried in one of my previous prototypes, this one however seems way smoother even though i did'nt really change my method that much. Furthuring my knowledge of IF statements was fun even though i realistically know there is more to learn when it comes to conditionals or statements such as loops and procedures but i still enjoy the simplicity of if statements. If i were to improve this project, id make pikachu a tad more reactive but i am proud with how i manage to even create him out of p5 shapes in the first place.
+
+## Events Challenge
+
+Created this with Nick again, first introduction into events. Defintetly a worthwhile experience and i will be using what ive learned with my next projects.
  
 
 

@@ -136,6 +136,18 @@ CLick on Pikachu to pet him! Hold click and move your mouse around and he will s
 
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/petPikachu_project/js/script.js)
 
+## Events Challenge
+
+[Link to Events Challenge](./events/index.html)
+
+Lose challenge if you press anything!
+
+>![Image of Events Challenge](./topics/version-control/version-control-workflow/assets/images/eventss.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/events/js/script.js)
+
+
+
 # > [Check out my journal!](./journal.md)
 
 
