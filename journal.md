@@ -34,6 +34,18 @@ For my second prototype i wanted to do something with mouse interactivity. Again
 
 For my last prototype, i got inspiration from "The Legend of Zelda: Majora's Mask". A core mechanic of that game is a moon which over the course of 3 days gets larger and eventually crashes down into the world. Taking that idea, i created a rudementary moon (less creepy than the moon in the game since i fufilled my spooky criteria for this assignment) and then created a simplistic landscape. In this project, as the moon grows larger, the more the canvas shakes. This allowed me to focus on how the canvas and the moon could interact together. I found getting the moon to fall down at the same rate as the canvas shaking was the hardest part but i did get it in the end!
 
+## Conditionals Challenge.
+
+I did this with Nick again, he guided me through parts of the challenge that i was particularily stuck on. Thanks to his help i felt more confident in attacking the conditionals assignment head on.
+
+## Conditional Prototype
+
+I began with a pretty simple idea using the idea of "overlap" and text screens showed as examples in class. Reviewing the example code, i had the idea to test users intuition. In my first prototype "To Explode or to Not Explode" i present users with two coloured buttons, one red, one green. I wish to test which button users feel more compelled to go towards. The green button will display the text for a more "good ending" where the world does not explode whilst you will explode the world if you press the red one. This project is rather simple but what makes it intresting is the exploration of the user's will. The process of creating this was not intense as i mostly just rearranged code i had already written or example code until i got the results i very much wanted. Further exploration of conditionals was made in my next prototype. 
+
+For my next prototype, i continued my trend of making something spooky. I believe this trend has started because i would love to make a horror game one day. Anyway, this project also features overlap dictations as well as "if statements" i am very familiar with if statements as for me they were the backbone of my computer science journey for two straight years. I also made a shape's opacity lower for the first time which i was not aware was an option in previous projects but the more you know i suppose. I calculated distances between shapes in correlation to my if statments to let the program now when it was time to switch the ghosts state (which consists of just changing colours or shape sizes etc.) This project was really fun and i believe its my most refined "spooky" project so far.
+
+
+
 
 
 
