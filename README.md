@@ -116,6 +116,10 @@ Which button will you press?
 
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/ExplodeWorld-Project/js/script.js)
 
+### Prototype 2
+
+[Link to Ghost Finder]()
+
 
 # > [Check out my journal!](./journal.md)
 
