@@ -28,7 +28,10 @@ function setup() {
  * of how close you are to it.
 */
 function draw() {
-    let (d < 120){
+      let d = dist(mouseX, mouseY, ghost.x, ghost.y);
+
+    if (d < 120) {
+        // when mouse is close to the ghost the background changes and ghost becomes scary
         background("#4a0000");
         drawGhost("#ffffff");
         drawScaryFace();
@@ -36,10 +39,10 @@ function draw() {
     else if (d < 300) {
         background("#0b0b1a");
         drawGhost("#8a8a9a");
-        drawCalmface();
-        
+        drawCalmFace();
     }
-    else{
+    else {
+        // when its far away the ghost is invisible except for the eyes
         background("#0b0b1a");
         drawGlowingEyes();
     }
@@ -87,5 +90,25 @@ function drawScaryFace() {
     //screaming mouth
     fill("#000000"); 
     ellipse(ghost.x, ghost.y + 70, 90, 130);
+    pop();
+}
+
+//draws the glowing red eyes of the ghost when its far away
+function drawGlowingEyes() {
+    push();
+    noStroke();
+    fill("#ff0000");
+    ellipse(ghost.x - 60, ghost.y - 20, 25);
+    ellipse(ghost.x + 60, ghost.y - 20, 25);
+    pop();
+}
+
+// a see through yellow circle that is meant to represent
+// a flashlight...
+function drawFlashlight() {
+    push();
+    noStroke();
+    fill(255, 255, 150, 60);
+    ellipse(mouseX, mouseY, 200);
     pop();
 }
