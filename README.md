@@ -122,13 +122,19 @@ Which button will you press?
 
 Can you find the ghost? Do you want to find the ghost?
 
->[Image of Ghost](./topics/version-control/version-control-workflow/assets/images/ghostss.png)
+>![Image of Ghost](./topics/version-control/version-control-workflow/assets/images/ghostss.png)
 
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/ghostfinder_prototype/js/script.js)
 
 ### Prototype 3
 
-[Link to Pikachu](./)
+[Link to Pikachu](./petPikachu_project/index.html)
+
+CLick on Pikachu to pet him! Hold click and move your mouse around and he will stay happy.
+
+>![Image of Pikachu](./topics/version-control/version-control-workflow/assets/images/pikachuss.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/petPikachu_project/js/script.js)
 
 # > [Check out my journal!](./journal.md)
 
