@@ -55,3 +55,22 @@ function checkPets() {
         return false;
     }
 }
+
+function drawPikachu() {
+    push();
+    noStroke();
+    fill(pikachu.fill);
+
+    // ears
+    triangle(pikachu.x - 120, pikachu.y - 80, pikachu.x - 190, pikachu.y - 280, pikachu.x - 40, pikachu.y - 130);
+    triangle(pikachu.x + 120, pikachu.y - 80, pikachu.x + 190, pikachu.y - 280, pikachu.x + 40, pikachu.y - 130);
+
+    // head
+    ellipse(pikachu.x, pikachu.y, pikachu.size);
+
+    // red cheeks
+    fill("#ff3b30");
+    ellipse(pikachu.x - 105, pikachu.y + 50, 55);
+    ellipse(pikachu.x + 105, pikachu.y + 50, 55);
+    pop();
+}
