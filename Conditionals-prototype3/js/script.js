@@ -21,7 +21,7 @@ let pikachu = {
  * creating the canvas!!
 */
 function setup() {
-    createCanvaas(1000, 1000);
+    createCanvas(1000, 1000);
 
 }
 
@@ -96,5 +96,23 @@ function drawWaitingFace() {
     strokeWeight(4);
     noFill();
     arc(pikachu.x, pikachu.y + 30, 40, 25, 0, PI);
+    pop();
+}
+
+//pikachus face when pet
+function drawHappyFace() {
+    push();
+    stroke("#000000");
+    strokeWeight(6);
+    noFill();
+
+    // happy closed eyes
+    arc(pikachu.x - 70, pikachu.y - 20, 45, 35, PI, TWO_PI);
+    arc(pikachu.x + 70, pikachu.y - 20, 45, 35, PI, TWO_PI);
+
+    // big open smile
+    strokeWeight(4);
+    fill("#8b0000");
+    arc(pikachu.x, pikachu.y + 20, 80, 70, 0, PI);
     pop();
 }
