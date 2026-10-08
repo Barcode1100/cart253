@@ -27,12 +27,14 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * draws pikachu 
 */
 function draw() {
     background("#5e70d7");
 
     drawPikachu();
+
+    //if statement to check if the mouse is pressed down on pikachu
 
     if (checkPets()){
         drawHappyFace();
@@ -41,4 +43,15 @@ function draw() {
         drawWaitingFace();
     }
 
+}
+
+// Returns true if the mouse presses pikachu
+
+function checkPets() {
+    let d = dist(mouseX, mouseY, pikachu.x, pikachu.y);
+    if (mouseIsPressed && d < pikachu.size / 2) {
+        return true;
+    } else {
+        return false;
+    }
 }
