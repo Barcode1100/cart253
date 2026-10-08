@@ -69,7 +69,23 @@ function drawCalmFace() {
     ellipse(ghost.x - 60, ghost.y - 20, 30);
     ellipse(ghost.x + 60, ghost.y - 20, 30);
 
-    // little "o" mouth
+    // little "o" shaped mouth
     ellipse(ghost.x, ghost.y + 50, 25);
+    pop();
+}
+
+//the will draw the "scary" face of the ghost when called
+function drawScaryFace() {
+    push();
+    noStroke();
+
+    //red eyes
+    fill("#ff0000");
+    ellipse(ghost.x - 60, ghost.y - 20, 55);
+    ellipse(ghost.x + 60, ghost.y - 20, 55);
+
+    //screaming mouth
+    fill("#000000"); 
+    ellipse(ghost.x, ghost.y + 70, 90, 130);
     pop();
 }
