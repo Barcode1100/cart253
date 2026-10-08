@@ -3,7 +3,8 @@
  * Ghost Finder
  * Sawyer Power
  * 
- * 
+ * The farther you are from the ghost the better...if you get too close
+ * who knows what will happen....
  * 
  */
 
