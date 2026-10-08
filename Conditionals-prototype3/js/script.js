@@ -30,5 +30,15 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background("#5e70d7");
+
+    drawPikachu();
+
+    if (checkPets()){
+        drawHappyFace();
+    }
+    else {
+        drawWaitingFace();
+    }
 
 }
