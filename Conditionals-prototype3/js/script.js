@@ -74,3 +74,27 @@ function drawPikachu() {
     ellipse(pikachu.x + 105, pikachu.y + 50, 55);
     pop();
 }
+ //eyes follow the mouse and pikachu has a cute little smile
+function drawWaitingFace() {
+    push();
+    let lookX = constrain((mouseX - pikachu.x) / 20, -12, 12);
+    let lookY = constrain((mouseY - pikachu.y) / 20, -12, 12);
+
+    // white eyes
+    noStroke();
+    fill("#ffffff");
+    ellipse(pikachu.x - 70, pikachu.y - 30, 55);
+    ellipse(pikachu.x + 70, pikachu.y - 30, 55);
+
+    // black pupils that move toward the mouse
+    fill("#000000");
+    ellipse(pikachu.x - 70 + lookX, pikachu.y - 30 + lookY, 28);
+    ellipse(pikachu.x + 70 + lookX, pikachu.y - 30 + lookY, 28);
+
+    // small smile
+    stroke("#000000");
+    strokeWeight(4);
+    noFill();
+    arc(pikachu.x, pikachu.y + 30, 40, 25, 0, PI);
+    pop();
+}
