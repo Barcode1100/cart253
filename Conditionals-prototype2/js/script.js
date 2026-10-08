@@ -48,11 +48,28 @@ function draw() {
 
 }
 
+//draws the ghosts body
+
 function drawGhost(color) {
     push();
     noStroke();
     fill(color);
     ellipse(ghost.x, ghost.y, ghost.size);
     rect(ghost.x - ghost.size / 2, ghost.y, ghost.size, ghost.size / 1.5);
+    pop();
+}
+
+//this creates the "calmer" ghost face when called
+function drawCalmFace() {
+    push();
+    noStroke();
+    fill("#000000");
+
+    // eyes
+    ellipse(ghost.x - 60, ghost.y - 20, 30);
+    ellipse(ghost.x + 60, ghost.y - 20, 30);
+
+    // little "o" mouth
+    ellipse(ghost.x, ghost.y + 50, 25);
     pop();
 }
