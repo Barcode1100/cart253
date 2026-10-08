@@ -118,7 +118,13 @@ Which button will you press?
 
 ### Prototype 2
 
-[Link to Ghost Finder]()
+[Link to Ghost Finder](./ghostfinder_prototype/index.html)
+
+Can you find the ghost? Do you want to find the ghost?
+
+>[Image of Ghost](./topics/version-control/version-control-workflow/assets/images/ghostss.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/ghostfinder_prototype/js/script.js)
 
 
 # > [Check out my journal!](./journal.md)
