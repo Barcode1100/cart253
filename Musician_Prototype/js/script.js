@@ -22,6 +22,13 @@ async function setup() {
 
 }
 
+function draw() {
+    background(30);
+    fill(255);
+    textSize(20);
+    text("W kick   A snare   S piano 1   D piano 2", width / 2, height / 2);
+}
+
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
