@@ -1,9 +1,9 @@
 /**
- * Title of Project
- * Author Name
+ * Become a Musician
+ * Sawyer Power
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * When you press a key (WASD) a sound plays! 
+ * Try and make a tune from it.
  */
 
 "use strict";

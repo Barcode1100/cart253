@@ -2,6 +2,9 @@
  * Phillips CD-i Demake
  * Sawyer Power
  *
+ * Unofficial Demake of an iconic moment in an obscure Zelda game.
+ * Do you have enough money for lamps, ropes, and oil?
+ * Click yes if you think you do...click no if you dare...
  */
 
 "use strict";
@@ -14,7 +17,7 @@ let shopShown = false;   // makes sure that the shop menu only appears once
 const PAUSE_TIME = 10;   // seconds into the video where it pauses
 
 const yesBtn = { x: 190, y: 330, w: 100, h: 50 };
-const noBtn  = { x: 350, y: 330, w: 100, h: 50 };
+const noBtn = { x: 350, y: 330, w: 100, h: 50 };
 
 
 function setup() {
@@ -27,7 +30,7 @@ function setup() {
 
 
 function draw() {
-      background(0);
+    background(0);
     image(morshuVideo, 0, 0, width, height);
 
     // Trigger the shop menu based on the video's own clock
@@ -77,7 +80,7 @@ function drawButton(btn, label) {
 //checks to see if the mouse is inside the button's area
 function isInside(btn) {
     return mouseX > btn.x && mouseX < btn.x + btn.w &&
-           mouseY > btn.y && mouseY < btn.y + btn.h;
+        mouseY > btn.y && mouseY < btn.y + btn.h;
 }
 
 //starts the video when the mouse is pressed and sets the timer to 10 seconds
