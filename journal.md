@@ -38,7 +38,7 @@ For my last prototype, i got inspiration from "The Legend of Zelda: Majora's Mas
 
 I did this with Nick again, he guided me through parts of the challenge that i was particularily stuck on. Thanks to his help i felt more confident in attacking the conditionals assignment head on.
 
-## Conditional Prototype
+## Conditional Prototypes
 
 I began with a pretty simple idea using the idea of "overlap" and text screens showed as examples in class. Reviewing the example code, i had the idea to test users intuition. In my first prototype "To Explode or to Not Explode" i present users with two coloured buttons, one red, one green. I wish to test which button users feel more compelled to go towards. The green button will display the text for a more "good ending" where the world does not explode whilst you will explode the world if you press the red one. This project is rather simple but what makes it intresting is the exploration of the user's will. The process of creating this was not intense as i mostly just rearranged code i had already written or example code until i got the results i very much wanted. Further exploration of conditionals was made in my next prototype. 
 
@@ -49,6 +49,10 @@ For my last prototype i returned to familiar territory with the hopes of advanci
 ## Events Challenge
 
 Created this with Nick again, first introduction into events. Defintetly a worthwhile experience and i will be using what ive learned with my next projects.
+
+## Event Prototypes
+
+I started this project as a bit of a silly joke, messing around with events whilst we were doing them in class. I was intrested by the idea of adding videos in p5 and was determined to make it happen. I chose the iconic video of Morshu, the shopkeeper in the Phillips CD-i Zelda game "Link: The Faces of Evil" cause i love that video. In the actual game when Link doesnt have enough rupees he cant buy whatever that guy is selling. I however just made it worse by adding a really rudementary shop menu screen, thats why im deeming it a demake. Making this prototype was fun but watching that clip over and over again has it stuck in my head. In the future, maybe ill figure out how to make the video start automatically upon opening, though that is probably an impossible task...
  
 
 

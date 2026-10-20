@@ -146,6 +146,16 @@ Lose challenge if you press anything!
 
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/events/js/script.js)
 
+## Events Prototype
+
+[Link to Morshu Demake](./Morshu%20Prototype/index.html)
+
+Experience the iconic shop from one of the Philips CD-i Legend of Zelda games...but worse!
+
+>![image of morshu](./topics/version-control/version-control-workflow/assets/images/morshuss.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/Morshu%20Prototype/js/script.js)
+
 
 
 # > [Check out my journal!](./journal.md)
