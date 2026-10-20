@@ -9,9 +9,16 @@
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * This creates the canvas and will also load the sound when called.
 */
-function setup() {
+async function setup() {
+    createCanvas(500, 500);
+    textAlign(CENTER, CENTER);
+
+    kick = await loadSound("sounds/kicksound.mp3");
+    snare = await loadSound("sounds/snaresound.mp3");
+    piano1 = await loadSound("sounds/piano1.wav");
+    piano2 = await loadSound("sounds/piano2.wav");
 
 }
 
