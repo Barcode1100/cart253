@@ -22,6 +22,7 @@ async function setup() {
 
 }
 
+//draw function draws the background as well as the text, labelling the different buttons
 function draw() {
     background(30);
     fill(255);
@@ -29,10 +30,15 @@ function draw() {
     text("W kick   A snare   S piano 1   D piano 2", width / 2, height / 2);
 }
 
+function keyPressed() {
+    // Ignore key presses until the sounds have finished loading
+    if (!kick || !snare || !piano1 || !piano2) return;
+    const k = key.toLowerCase(); // so Caps Lock / Shift still works
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
-
+    if (k === "w") kick.play();
+    if (k === "a") snare.play();
+    if (k === "s") piano1.play();
+    if (k === "d") piano2.play();
 }
+
+
