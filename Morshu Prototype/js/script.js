@@ -83,8 +83,14 @@ function isInside(btn) {
 //starts the video when the mouse is pressed and sets the timer to 10 seconds
 function mousePressed() {
     if (!started) {
-        morshuVideo.loop();
+        morshuVideo.play();
         started = true;
-        timer = 10;
+        return;
+    }
+
+    // Only the Yes button closes the shop screen
+    if (showShop && isInside(yesBtn)) {
+        showShop = false;
+        morshuVideo.play();
     }
 }
