@@ -8,7 +8,13 @@
 
 let morshuVideo;
 let started = false;
-let timer = 1789787968678678678678;
+let showShop = false;
+let shopShown = false;   // makes sure that the shop menu only appears once
+
+const PAUSE_TIME = 10;   // seconds into the video where it pauses
+
+const yesBtn = { x: 190, y: 330, w: 100, h: 50 };
+const noBtn  = { x: 350, y: 330, w: 100, h: 50 };
 
 
 function setup() {
@@ -21,17 +27,19 @@ function setup() {
 
 
 function draw() {
-    background(0);
+      background(0);
+    image(morshuVideo, 0, 0, width, height);
 
-    if (frameCount % 60 == 0 && timer > 0) {
-        timer--;
-    } if (timer == 0) {
+    // Trigger the shop menu based on the video's own clock
+    if (started && !shopShown && morshuVideo.time() >= PAUSE_TIME) {
         morshuVideo.pause();
-        console.log("timersotp")
+        showShop = true;
+        shopShown = true;
     }
 
-
-    image(morshuVideo, 0, 0, width, height);
+    if (showShop) {
+        drawShopScreen();
+    }
 }
 
 
