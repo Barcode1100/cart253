@@ -33,7 +33,9 @@ function draw() {
 function keyPressed() {
     // Ignore key presses until the sounds have finished loading
     if (!kick || !snare || !piano1 || !piano2) return;
-    const k = key.toLowerCase(); // so Caps Lock / Shift still works
+
+    // so Caps Lock / Shift still works
+    const k = key.toLowerCase();
 
     if (k === "w") kick.play();
     if (k === "a") snare.play();
