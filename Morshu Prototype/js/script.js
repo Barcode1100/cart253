@@ -42,6 +42,7 @@ function draw() {
     }
 }
 
+//this will give us the shop menu and call the drawButton function to draw the buttons on the screen
 function drawShopScreen() {
     fill(0, 220);
     noStroke();
@@ -59,6 +60,27 @@ function drawShopScreen() {
 }
 
 
+//draws the buttons and adds a hover effect when the mouse is over the button
+function drawButton(btn, label) {
+    stroke(255);
+    strokeWeight(2);
+    fill(isInside(btn) ? 80 : 0);
+    rect(btn.x, btn.y, btn.w, btn.h);
+
+    noStroke();
+    fill(255);
+    textSize(24);
+    textAlign(CENTER, CENTER);
+    text(label, btn.x + btn.w / 2, btn.y + btn.h / 2);
+}
+
+//checks to see if the mouse is inside the button's area
+function isInside(btn) {
+    return mouseX > btn.x && mouseX < btn.x + btn.w &&
+           mouseY > btn.y && mouseY < btn.y + btn.h;
+}
+
+//starts the video when the mouse is pressed and sets the timer to 10 seconds
 function mousePressed() {
     if (!started) {
         morshuVideo.loop();
