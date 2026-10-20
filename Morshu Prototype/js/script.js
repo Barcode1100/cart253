@@ -42,6 +42,22 @@ function draw() {
     }
 }
 
+function drawShopScreen() {
+    fill(0, 220);
+    noStroke();
+    rect(0, 0, width, height);
+
+    fill(255);
+    textAlign(CENTER, CENTER);
+    textSize(48);
+    text("0 Rupees", width / 2, 150);
+    textSize(28);
+    text("Buy?", width / 2, 230);
+
+    drawButton(yesBtn, "Yes");
+    drawButton(noBtn, "No");
+}
+
 
 function mousePressed() {
     if (!started) {
