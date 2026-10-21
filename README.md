@@ -148,6 +148,8 @@ Lose challenge if you press anything!
 
 ## Events Prototype
 
+### Prototype 1
+
 [Link to Morshu Demake](./Morshu%20Prototype/index.html)
 
 Experience the iconic shop from one of the Philips CD-i Legend of Zelda games...but worse!
@@ -155,6 +157,16 @@ Experience the iconic shop from one of the Philips CD-i Legend of Zelda games...
 >![image of morshu](./topics/version-control/version-control-workflow/assets/images/morshuss.png)
 
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/Morshu%20Prototype/js/script.js)
+
+### Prototype 2
+
+[Link to Drumset](./drumset_prototype/index.html)
+
+Become the ultimate drummer as you type away on your keyboard.
+
+>![Image of Drumset](./topics/version-control/version-control-workflow/assets/images/drumsetss.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/drumset_prototype/js/script.js)
 
 
 
