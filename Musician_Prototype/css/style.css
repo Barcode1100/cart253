@@ -9,12 +9,15 @@ Also hides overflow.
 
 **********************************************/
 
+html,
 body {
-  padding: 0;
+  height: 100%;
   margin: 0;
-  display: grid; /* Set up the grid and justify/align to center */
+  background: #1e1e1e;
+}
+
+body {
+  display: flex;
   justify-content: center;
-  align-content: center;
-  height: 100vh; /* Body is the height of the viewport */
-  overflow: hidden; /* Hide anything that goes off the window size */
+  align-items: center;
 }
