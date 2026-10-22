@@ -43,6 +43,11 @@ async function setup() {
 
 function draw() {
     background(0);
+    
+    // Start screen
+    if (!playing && !failed) {
+        drawText("Click the Freddy", "Click or press Space to start");
+    }
 }
 
 
