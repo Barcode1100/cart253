@@ -151,3 +151,21 @@ function gameOver() {
         best = score;
     }
 }
+
+// Runs when the mouse is pressed on the canvas
+function clicked() {
+    // Not playing, so a click starts the game (after a short delay cuz again, reaction time)
+    if (!playing) {
+        if (millis() - failTime > 500) {
+            startGame();
+        }
+        return;
+    }
+
+    // Playing, so check if the click landed on Freddy cuz if not you lose
+    if (freddyVisible && dist(mouseX, mouseY, freddyX, freddyY) < freddySize / 2) {
+        score++;
+        freddyVisible = false;
+        setNextSpawn();
+    }
+}
