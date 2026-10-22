@@ -168,6 +168,16 @@ Become the ultimate drummer as you type away on your keyboard.
 
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/drumset_prototype/js/script.js)
 
+### Prototype 3
+
+[Link to Freddy Clicker](./freddy_prototype/index.html)
+
+Click Freddy as fast as possible to not die!
+
+>![Image of Freddy Clicker](./topics/version-control/version-control-workflow/assets/images/furious.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/freddy_prototype/js/script.js)
+
 
 
 # > [Check out my journal!](./journal.md)
