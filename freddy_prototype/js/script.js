@@ -100,3 +100,20 @@ function drawGame() {
     textAlign(CENTER, CENTER);
 
 }
+
+//created a flashlight just like the games with low opacity 
+function drawFlashlight() {
+    noStroke();
+    fill(255, 230, 0, 60);
+    circle(mouseX, mouseY, 120);
+}
+
+// Draws a big title with smaller text underneath
+function drawText(title, subtitle) {
+    fill(255);
+    noStroke();
+    textSize(56);
+    text(title, width / 2, height / 2 - 40);
+    textSize(22);
+    text(subtitle, width / 2, height / 2 + 40);
+}
