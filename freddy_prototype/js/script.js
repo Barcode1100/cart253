@@ -117,3 +117,17 @@ function drawText(title, subtitle) {
     textSize(22);
     text(subtitle, width / 2, height / 2 + 40);
 }
+
+// Starts a new game
+function startGame() {
+    playing = true;
+    failed = false;
+    score = 0;
+    freddyVisible = false;
+    setNextSpawn();
+}
+
+// Picks a random time for Freddy to show up 
+function setNextSpawn() {
+    spawnTime = millis() + random(500, 4000);
+}
