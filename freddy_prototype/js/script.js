@@ -131,3 +131,23 @@ function startGame() {
 function setNextSpawn() {
     spawnTime = millis() + random(500, 4000);
 }
+
+// Puts Freddy in a random spot
+function showFreddy() {
+    freddyX = random(freddySize / 2, width - freddySize / 2);
+    freddyY = random(freddySize / 2 + 40, height - freddySize / 2 - 40);
+    freddyVisible = true;
+    hideTime = millis() + showTime;
+}
+
+// Ends the game
+function gameOver() {
+    playing = false;
+    failed = true;
+    freddyVisible = false;
+    failTime = millis();
+
+    if (score > best) {
+        best = score;
+    }
+}
