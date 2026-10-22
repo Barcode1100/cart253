@@ -9,6 +9,13 @@
 "use strict";
 
 let freddy;
+
+let playing = false;   // true while the game is running
+let failed = false;    // true on the "You Died!" screen
+
+let score = 0;
+let best = 0;
+
 // Freddy's position, size and if he is on screen right now
 let freddyX = 0;
 let freddyY = 0;
@@ -26,15 +33,23 @@ async function setup() {
     noCursor();
 
     freddy = await loadImage("assets/images/freddy.webp");
+
+     // Run clicked() when the canvas is clicked and keyDown() when a key is pressed
+    document.querySelector("canvas").addEventListener("mousedown", clicked);
+    window.addEventListener("keydown", keyDown);
     
 
+}
+
+function draw() {
+    background(0);
 }
 
 
 /**
  * this will draw freddy and the score and also a bar that shows up much time you have left to get him.
 */
-function draw() {
+function drawGame() {
      if (freddyVisible) {
         image(freddy, freddyX, freddyY, freddySize, freddySize);
 
