@@ -33,30 +33,27 @@ let failTime = -1000;   // when you failed (stops the game from instantly restar
  * loads image and sets up event listeners
 */
 async function setup() {
-     createCanvas(700, 500);
+    createCanvas(700, 500);
     textAlign(CENTER, CENTER);
     imageMode(CENTER);
     noCursor();
 
     freddy = await loadImage("assets/images/freddy.webp");
 
-     // Run clicked() when the canvas is clicked and keyDown() when a key is pressed
+    // Run clicked() when the canvas is clicked
     document.querySelector("canvas").addEventListener("mousedown", clicked);
-    window.addEventListener("keydown", keyDown);
-    
-
 }
 
 function draw() {
     background(0);
-    
+
     // Start screen
     if (!playing && !failed) {
-        drawText("Click the Freddy", "Click or press Space to start");
+        drawText("Click the Freddy", "Click to start");
     }
 
     //actual game play
-     if (playing) {
+    if (playing) {
         // Time for Freddy to show up
         if (!freddyVisible && millis() >= spawnTime) {
             showFreddy();
@@ -70,9 +67,9 @@ function draw() {
         drawGame();
     }
 
-     // Fail screen
+    // Fail screen
     if (failed) {
-        drawText("You Died!", "Score: " + score + "   Best: " + best + "\nClick or press Space to try again");
+        drawText("You Died!", "Score: " + score + "   Best: " + best + "\nClick to try again");
     }
 
     drawFlashlight();
@@ -83,7 +80,7 @@ function draw() {
  * this will draw freddy and the score and also a bar that shows up much time you have left to get him.
 */
 function drawGame() {
-     if (freddyVisible) {
+    if (freddyVisible) {
         image(freddy, freddyX, freddyY, freddySize, freddySize);
 
         // Bar along the top showing how much time is left
@@ -162,7 +159,7 @@ function clicked() {
         return;
     }
 
-    // Playing, so check if the click landed on Freddy cuz if not you lose
+    // Player clicked Freddy, so increase score and hide him
     if (freddyVisible && dist(mouseX, mouseY, freddyX, freddyY) < freddySize / 2) {
         score++;
         freddyVisible = false;
