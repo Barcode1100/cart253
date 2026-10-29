@@ -1,19 +1,32 @@
 /**
- * Title of Project
- * Author Name
+ * Shark Attack
+ * Sawyer Power
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A bunch of spinning sharks will follow you around, click to make them go away!
  */
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-function setup() {
+// the cute shark gif
 
+let sharkGif;    
+/**
+ * loads the shark gif and sets up the canvas
+*/
+async function setup() {
+    createCanvas(windowWidth, windowHeight);
+    document.body.style.margin = "0";
+    document.body.style.overflow = "hidden";
+
+    imageMode(CENTER);
+
+    sharkGif = await loadImage("assets/images/blahajtrans.gif");
+
+    for (let i = 0; i < sharkCount; i++) {
+        sharks.push(createShark());
+    }
 }
+
 
 
 /**
