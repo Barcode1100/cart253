@@ -178,6 +178,37 @@ Click Freddy as fast as possible to not die!
 
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/freddy_prototype/js/script.js)
 
+## Function Prototypes
+
+### Prototype 1
+
+[Link to Cute Shark](./cuteshark_prototype/index.html)
+
+These cute sharks are relatively harmless but if you want them to get away...just click!
+
+>![Image of Cute Shark](./topics/version-control/version-control-workflow/assets/images/sharkss.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/cuteshark_prototype/js/script.js)
+
+### Prototype 2
+
+[Link to Sonic Demake](./sonic_demake/index.html)
+
+A Demake of the iconic 'Green Hill Zne' Level from the first Sonic game.
+
+>![Image of Sonic Demake](./topics/version-control/version-control-workflow/assets/images/greenhillss.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/sonic_demake/js/script.js)
+
+### Prototype 3
+
+[Link to Fnaf Door Sim](./fnafdoor_prototype/index.html)
+
+Click on any of the 5 doors...whats lurking inside remains a mystery...
+
+>![Image of Doors](./topics/version-control/version-control-workflow/assets/images/fnafss.png)
+
+
 
 
 # > [Check out my journal!](./journal.md)
