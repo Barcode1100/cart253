@@ -101,4 +101,28 @@ function draw() {
         }
     }
 
-    
+    // Draw ring 1
+    image(ringImage, ring1X, ring1Y, 36, 36);
+
+    // Draw ring 2
+    image(ringImage, ring2X, ring2Y, 36, 36);
+
+    // Draw motobug
+    image(motobug, motobugX, groundY - 25, 50, 50);
+
+    // Draw player
+    image(sonic, 120, playerY, playerRadius * 2, playerRadius * 2);
+
+    // Score
+    fill(255);
+    noStroke();
+    textSize(24);
+    text("Rings: " + score, 70, 30);
+
+    if (gameOver) {
+        textSize(56);
+        text("Game Over", width / 2, height / 2 - 30);
+        textSize(22);
+        text("Click to try again", width / 2, height / 2 + 30);
+    }
+}
