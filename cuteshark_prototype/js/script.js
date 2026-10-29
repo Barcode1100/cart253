@@ -27,6 +27,26 @@ async function setup() {
     }
 }
 
+// Draws the water background and the sharks
+function draw() {
+    drawWater();
+
+    const scared = millis() < scaredUntil;
+
+    for (let shark of sharks) {
+        const target = getTarget(shark, scared);
+
+        // Move a little closer to the target
+        shark.x = chase(shark.x, target.x, shark.speed);
+        shark.y = chase(shark.y, target.y, shark.speed);
+
+        // A little up and down wobble so they look alive
+        const wobble = sin(frameCount * 0.1 + shark.wobble) * 5;
+
+        drawShark(shark.x, shark.y + wobble, shark.size);
+    }
+}
+
 
 
 /**
