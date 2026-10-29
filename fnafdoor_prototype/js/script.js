@@ -110,3 +110,30 @@ function layoutDoors() {
         doors[i].h = doorH;
     }
 }
+
+//returns true when the mouse is over a rectangle with the given position and size
+
+function isOver(x, y, w, h) {
+    return mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h;
+}
+
+//draws one door and gives it a lighter look when the mouse hovers over it
+
+function drawDoor(x, y, w, h, hovered) {
+    if (hovered) {
+        tint(255);
+    } else {
+        tint(180);
+    }
+    image(doorImage, x + w / 2, y + h / 2, w, h);
+    noTint();
+}
+
+//spooky spooky hallway
+
+function drawHallway() {
+    background(20, 15, 25);
+    noStroke();
+    fill(35, 28, 28);
+    rect(0, height * 0.78, width, height * 0.22);
+}
