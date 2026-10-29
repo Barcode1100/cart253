@@ -8,8 +8,14 @@
 "use strict";
 
 // the cute shark gif
+const sharkCount = 25;
+const scareTime = 1000;   // how long the sharks run away after a click
 
 let sharkGif;    
+
+let sharks = [];       // made by createShark()
+let scaredUntil = 0;   // when the sharks stop being scared
+
 /**
  * loads the shark gif and sets up the canvas
 */
@@ -62,10 +68,21 @@ function createShark() {
     };
 }
 
-
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
+ * Returns where a shark wants to go, like near the mouse, or away from it if scared!
+ */
+function getTarget(shark, scared) {
+    if (scared) {
+        // Run in the direction directly away from the mouse
+        const angle = atan2(shark.y - mouseY, shark.x - mouseX);
+        return {
+            x: constrain(shark.x + cos(angle) * 600, 0, width),
+            y: constrain(shark.y + sin(angle) * 600, 0, height)
+        };
+    }
 
+    return {
+        x: mouseX + shark.offsetX,
+        y: mouseY + shark.offsetY
+    };
 }
