@@ -83,3 +83,30 @@ function createDoors() {
 
     return list;
 }
+
+//Returns a new door object
+
+function createDoor(behind) {
+    return {
+        behind: behind,
+        x: 0,
+        y: 0,
+        w: 0,
+        h: 0
+    };
+}
+
+//formats the doors on the screen so they are evenly spaced and centered
+
+function layoutDoors() {
+    const doorH = height * 0.5;
+    const doorW = doorH * doorImage.width / doorImage.height;   // keeps the image's shape
+    const gap = (width - doorW * doors.length) / (doors.length + 1);
+
+    for (let i = 0; i < doors.length; i++) {
+        doors[i].x = gap + i * (doorW + gap);
+        doors[i].y = height * 0.28;
+        doors[i].w = doorW;
+        doors[i].h = doorH;
+    }
+}
