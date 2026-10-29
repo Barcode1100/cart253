@@ -137,3 +137,12 @@ function drawHallway() {
     fill(35, 28, 28);
     rect(0, height * 0.78, width, height * 0.22);
 }
+
+//draws the jumpscare image in the center of the screen with some random offset for shake effect
+function drawJumpscare(img) {
+    background(0);
+    const h = height;
+    const w = h * img.width / img.height;
+    image(img, width / 2 + random(-15, 15), height / 2 + random(-15, 15), w, h);
+}
+
