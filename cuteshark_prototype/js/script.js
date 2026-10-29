@@ -86,3 +86,17 @@ function getTarget(shark, scared) {
         y: mouseY + shark.offsetY
     };
 }
+
+
+  //Returns a position that is a little closer to the target.
+ 
+function chase(position, target, speed) {
+    return lerp(position, target, speed);
+}
+
+
+//   Draws one shark at the given position and size.
+ 
+function drawShark(x, y, size) {
+    image(sharkGif, x, y, size, size * sharkGif.height / sharkGif.width);
+}
