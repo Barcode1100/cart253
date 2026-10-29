@@ -22,7 +22,7 @@ let freddyY = 0;
 let freddySize = 130;
 let freddyVisible = false;
 
-const showTime = 500;   // how long you get to click him (ms)
+const showTime = 700;   // how long you get to click him (ms)
 
 let spawnTime = 0;      // when he shows up next
 let hideTime = 0;       // when you run out of time
@@ -126,7 +126,7 @@ function startGame() {
 
 // Picks a random time for Freddy to show up 
 function setNextSpawn() {
-    spawnTime = millis() + random(500, 4000);
+    spawnTime = millis() + random(500, 6000);
 }
 
 // Puts Freddy in a random spot
