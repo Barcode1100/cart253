@@ -146,3 +146,14 @@ function drawJumpscare(img) {
     image(img, width / 2 + random(-15, 15), height / 2 + random(-15, 15), w, h);
 }
 
+//Draws a title with smaller text underneath
+
+function drawText(title, subtitle) {
+    fill(255);
+    noStroke();
+    textSize(height * 0.08);
+    text(title, width / 2, height * 0.12);
+    textSize(height * 0.035);
+    text(subtitle, width / 2, height * 0.2);
+}
+
