@@ -9,6 +9,7 @@
 "use strict";
 
 const animatronics = ["freddy", "foxy", "bonnie", "chica"];
+const restartDelay = 1500;
 
 let images = {}; 
 let doorImage; 
@@ -169,4 +170,45 @@ function openDoor(door) {
         scaredBy = door.behind;
         playJumpscare();
     }
+}
+
+// Plays the jumpscare sound from the start
+
+function playJumpscare() {
+    jumpscareSound.currentTime = 0;
+    jumpscareSound.play();
+}
+
+// Starts a new game with the doors shuffled
+
+function resetGame() {
+    jumpscareSound.pause();
+    state = "playing";
+    doors = createDoors();
+    layoutDoors();
+}
+
+// Click a door to open it, or click to restart after the game ends
+
+function mousePressed() {
+    if (state === "playing") {
+        for (let door of doors) {
+            if (isOver(door.x, door.y, door.w, door.h)) {
+                openDoor(door);
+                return;
+            }
+        }
+        return;
+    }
+
+    if (millis() - endTime > restartDelay) {
+        resetGame();
+    }
+}
+
+// Keeps the game filling the browser window
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+    layoutDoors();
 }
