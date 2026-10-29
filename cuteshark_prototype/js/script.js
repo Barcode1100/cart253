@@ -100,3 +100,23 @@ function chase(position, target, speed) {
 function drawShark(x, y, size) {
     image(sharkGif, x, y, size, size * sharkGif.height / sharkGif.width);
 }
+
+// Blue water that gets darker toward the bottom
+function drawWater() {
+    noStroke();
+    for (let y = 0; y < height; y += 4) {
+        fill(lerpColor(color(90, 200, 240), color(10, 40, 120), y / height));
+        rect(0, y, width, 4);
+    }
+}
+
+
+// Click to scare the sharks
+function mousePressed() {
+    scaredUntil = millis() + scareTime;
+}
+
+// Keeps the sketch filling the browser window
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
