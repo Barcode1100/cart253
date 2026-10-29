@@ -11,9 +11,13 @@
 let images = {}; 
 let doorImage; 
 let jumpscareSound; 
+
+let state = "playing";
+let scaredBy = "";
+let endTime = 0; 
 /**
  * sets up the canvas, loads the gifs and the sound, and starts the game.
- * it's async so it can wait (await) for the gifs to load before draw() starts running.
+
 */
 async function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -34,8 +38,31 @@ async function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * runs every frame. shows the hallway while playing,
+ * the jumpscare if you opened the wrong door, or the win screen.
 */
 function draw() {
+    if (state === "playing") {
+        drawHallway();
 
+        for (let door of doors) {
+            drawDoor(door.x, door.y, door.w, door.h, isOver(door.x, door.y, door.w, door.h));
+        }
+
+        drawText("Pick a door", "");
+    }
+
+    if (state === "jumpscare") {
+        drawJumpscare(images[scaredBy]);
+
+        // Only show the try again text after a moment so the scare isn't covered up
+        if (millis() - endTime > restartDelay) {
+            drawText("You Died!", "Click to try again");
+        }
+    }
+
+    if (state === "win") {
+        background(255, 240, 150);
+        drawText("You Escaped!", "Click to play again");
+    }
 }
