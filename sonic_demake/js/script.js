@@ -30,8 +30,55 @@ async function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * the main draw loop, draws the background, player, rings and bugs, and checks for collisions.
 */
 function draw() {
+    // Background (it already has the ground in it)
+    image(bgImage, width / 2, height / 2, width, height);
 
-}
+    if (!gameOver) {
+        // Player jumping and falling
+        playerSpeedY += 0.8;
+        playerY += playerSpeedY;
+        if (playerY > groundY - playerRadius) {
+            playerY = groundY - playerRadius;
+            playerSpeedY = 0;
+        }
+
+        // Move ring 1
+        ring1X -= speed;
+        if (ring1X < -50) {
+            ring1X = width + random(100, 400);
+        }
+
+        // Move ring 2
+        ring2X -= speed;
+        if (ring2X < -50) {
+            ring2X = width + random(100, 400);
+        }
+
+        // Move motobug
+        motobugX -= speed;
+        if (motobugX < -50) {
+            motobugX = width + random(100, 400);
+        }
+
+        // Check ring 1
+        if (dist(120, playerY, ring1X, ring1Y) < 42) {
+            score++;
+            ring1X = width + random(100, 400);
+        }
+
+        // Check ring 2
+        if (dist(120, playerY, ring2X, ring2Y) < 42) {
+            score++;
+            ring2X = width + random(100, 400);
+        }
+
+        // Check motobug
+        if (dist(120, playerY, motobugX, groundY - 25) < 45) {
+            gameOver = true;
+        }
+    }
+
+    
