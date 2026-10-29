@@ -157,3 +157,16 @@ function drawText(title, subtitle) {
     text(subtitle, width / 2, height * 0.2);
 }
 
+//Opens a door. A safe door wins the game, anything else is a jumpscare.
+
+function openDoor(door) {
+    endTime = millis();
+
+    if (door.behind === "safe") {
+        state = "win";
+    } else {
+        state = "jumpscare";
+        scaredBy = door.behind;
+        playJumpscare();
+    }
+}
