@@ -7,10 +7,30 @@
 
 "use strict";
 
+const groundY = 360;   // lines up with the grass in the background
+const speed = 9;
+const playerRadius = 30;   // half the size the player image is drawn at
+
 let sonic;    
 let motobug;   
 let ringImage; 
 let bgImage;   
+
+let playerY = groundY - playerRadius;
+let playerSpeedY = 0;
+let score = 0;
+let gameOver = false;
+
+// Ring 1
+let ring1X = 800;
+let ring1Y = groundY - 30;
+
+// Ring 2 (up high, you have to jump for it)
+let ring2X = 1200;
+let ring2Y = groundY - 110;
+
+// Motobug
+let motobugX = 1000;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
