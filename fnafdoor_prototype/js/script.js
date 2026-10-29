@@ -8,10 +8,13 @@
 
 "use strict";
 
+const animatronics = ["freddy", "foxy", "bonnie", "chica"];
+
 let images = {}; 
 let doorImage; 
 let jumpscareSound; 
 
+let doors = [];   
 let state = "playing";
 let scaredBy = "";
 let endTime = 0; 
@@ -65,4 +68,18 @@ function draw() {
         background(255, 240, 150);
         drawText("You Escaped!", "Click to play again");
     }
+}
+
+//Returns a list of 5 doors. The things hiding behind them get shuffled,
+//The win door changes every game...
+
+function createDoors() {
+    const behind = shuffle(["freddy", "foxy", "bonnie", "chica", "safe"]);
+    let list = [];
+
+    for (let name of behind) {
+        list.push(createDoor(name));
+    }
+
+    return list;
 }
