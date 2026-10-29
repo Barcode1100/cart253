@@ -47,6 +47,20 @@ function draw() {
     }
 }
 
+/**
+ * Creates a shark object with random starting position, size, speed and offset from mouse
+ */
+function createShark() {
+    return {
+        x: random(width),
+        y: random(height),
+        size: random(40, 90),
+        speed: random(0.02, 0.07),
+        offsetX: random(-120, 120),   // each shark hangs around the mouse in its own spot
+        offsetY: random(-120, 120),
+        wobble: random(TWO_PI)
+    };
+}
 
 
 /**
