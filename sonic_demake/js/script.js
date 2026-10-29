@@ -126,3 +126,25 @@ function draw() {
         text("Click to try again", width / 2, height / 2 + 30);
     }
 }
+
+// Click to jump (only from the ground) or restart after game over
+function mousePressed() {
+    if (gameOver) {
+        resetGame();
+        return;
+    }
+
+    if (playerY >= groundY - playerRadius) {
+        playerSpeedY = -15;
+    }
+}
+
+function resetGame() {
+    gameOver = false;
+    score = 0;
+    playerY = groundY - playerRadius;
+    playerSpeedY = 0;
+    ring1X = 800;
+    ring2X = 1200;
+    motobugX = 1000;
+}
