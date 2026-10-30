@@ -208,6 +208,8 @@ Click on any of the 5 doors...whats lurking inside remains a mystery...
 
 >![Image of Doors](./topics/version-control/version-control-workflow/assets/images/fnafss.png)
 
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/fnafdoor_prototype/js/script.js)
+
 ## Arrays Challenge
 
 [Link to Arrays Challenge](./Boingo/index.html)
