@@ -11,6 +11,8 @@ const characterFiles = ["sonic.png", "tails.png", "knuckles.png", "jet.png", "sh
 
 let images = [];   // character images array
 
+let balls = [];    // made by createBall()
+
 let bgImage;       // the background image
 
 
@@ -38,8 +40,15 @@ async function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * runs every frame then moves and draws every ball in the array.
 */
 function draw() {
+    // Background image, stretched to fill the whole canvas
 
+    image(bgImage, width / 2, height / 2, width, height);
+
+    for (let ball of balls) {
+        moveBall(ball);
+        drawBall(ball);
+    }
 }
