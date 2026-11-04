@@ -9,6 +9,10 @@
 
 const characterFiles = ["sonic.png", "tails.png", "knuckles.png", "jet.png", "shadow.png"];
 
+const startCount = 0;    // how many balls are made at the start 
+
+const maxSpeed = 20;      // the fastest a ball can move in any direction (raise this to go faster)
+
 let images = [];   // character images array
 
 let balls = [];    // made by createBall()
