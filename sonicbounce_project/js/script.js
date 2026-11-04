@@ -52,3 +52,20 @@ function draw() {
         drawBall(ball);
     }
 }
+
+//Returns a new ball object at the given position with a random character,
+
+function createBall(x, y) {
+    const img = random(images);
+    const size = random(10, 200);
+
+    return {
+        x: x,
+        y: y,
+        vx: random(-maxSpeed, maxSpeed),
+        vy: random(-maxSpeed, maxSpeed),
+        img: img,
+        w: size,
+        h: size * img.height / img.width   // keeps the png's shape
+    };
+}
