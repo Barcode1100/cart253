@@ -86,3 +86,19 @@ function moveBall(ball) {
         ball.y = constrain(ball.y, ball.h / 2, height - ball.h / 2);
     }
 }
+
+// draws one sonic character at the given position and size
+
+function drawBall(ball) {
+    image(ball.img, ball.x, ball.y, ball.w, ball.h);
+}
+
+// Click to add a new ball at the mouse
+function mousePressed() {
+    balls.push(createBall(mouseX, mouseY));
+}
+
+// Keeps the sketch filling the browser window
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
