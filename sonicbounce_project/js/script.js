@@ -69,3 +69,20 @@ function createBall(x, y) {
         h: size * img.height / img.width   // keeps the png's shape
     };
 }
+
+//Moves a ball and makes it bounce off the edges of the screen.
+
+function moveBall(ball) {
+    ball.x += ball.vx;
+    ball.y += ball.vy;
+
+    if (ball.x < ball.w / 2 || ball.x > width - ball.w / 2) {
+        ball.vx *= -1;
+        ball.x = constrain(ball.x, ball.w / 2, width - ball.w / 2);
+    }
+
+    if (ball.y < ball.h / 2 || ball.y > height - ball.h / 2) {
+        ball.vy *= -1;
+        ball.y = constrain(ball.y, ball.h / 2, height - ball.h / 2);
+    }
+}
