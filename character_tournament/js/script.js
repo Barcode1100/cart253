@@ -63,9 +63,14 @@ function draw() {
     flash *= 0.85;
 }
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
+// Puts every character in the line in a random order and clears the losers
+function startTournament() {
+    let all = [];
 
+    for (let i = 0; i < images.length; i++) {
+        all.push(i);
+    }
+
+    contenders = shuffle(all);
+    eliminated = [];
 }
