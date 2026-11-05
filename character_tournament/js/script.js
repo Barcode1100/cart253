@@ -34,7 +34,7 @@ async function setup() {
     textAlign(CENTER, CENTER);
 
     for (let file of characterFiles) {
-        images.push(await loadImage("assets/images/" + file));
+        images.push(await loadImage("/assets/images/" + file));
     }
 
     startTournament();
