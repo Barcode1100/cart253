@@ -21,22 +21,46 @@ let eliminated = [];   // everyone who has lost, in the order they lost
 
 
 /**
- * sets up the canvas, loads all the pngs, and starts the tournament.
- * 
+ * runs every frame. shows the two fighters while the tournament is going,
+ * or the winner and their name once only one is left.
 */
-async function setup() {
-    createCanvas(windowWidth, windowHeight);
-    document.body.style.margin = "0";
-    document.body.style.overflow = "hidden";
+function draw() {
+    background(10, 20, 60);
 
-    imageMode(CENTER);
-    textAlign(CENTER, CENTER);
+    if (contenders.length > 1) {
+        // Light up the side the mouse is on
+        noStroke();
+        fill(255, 25);
+        if (mouseX < width / 2) {
+            rect(0, 0, width / 2, height);
+        } else {
+            rect(width / 2, 0, width / 2, height);
+        }
 
-    for (let file of characterFiles) {
-        images.push(await loadImage("assets/images/" + file));
+        drawCharacter(contenders[0], width * 0.3, height * 0.5, height * 0.6);
+        drawCharacter(contenders[1], width * 0.7, height * 0.5, height * 0.6);
+
+        fill(255);
+        textSize(height * 0.08);
+        text("VS", width / 2, height * 0.5);
+        textSize(height * 0.04);
+        text("Characters left: " + contenders.length, width / 2, height * 0.06);
+    } else {
+        fill(255, 220, 80);
+        textSize(height * 0.08);
+        text("WINNER", width / 2, height * 0.07);
+
+        drawCharacter(contenders[0], width / 2, height * 0.47, height * 0.65);
     }
 
-    startTournament();
+    // White flash that fades out
+    if (flash > 1) {
+        noStroke();
+        fill(255, flash);
+        rect(0, 0, width, height);
+    }
+
+    flash *= 0.85;
 }
 
 /**
