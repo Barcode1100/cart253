@@ -144,3 +144,19 @@ function drawFollower(follower) {
     image(follower.img, follower.x, follower.y, follower.w * follower.grow, follower.h * follower.grow);
 }
 
+// Click to add a random character, with a shake and a flash (Gackt's are much stronger)
+function mousePressed() {
+    const i = floor(random(images.length));
+    const isGackt = characterFiles[i] === "Gackt.png";
+
+    followers.push(createFollower(images[i], isGackt));
+
+    shake = isGackt ? 60 : 20;
+    flash = isGackt ? 255 : 150;
+    flashColor = [255, 255, 255];
+}
+
+// Keeps the sketch filling the browser window
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
