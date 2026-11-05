@@ -21,12 +21,23 @@ let eliminated = [];   // everyone who has lost, in the order they lost
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * sets up the canvas, loads all the pngs, and starts the tournament.
+ * 
 */
-function setup() {
+async function setup() {
+    createCanvas(windowWidth, windowHeight);
+    document.body.style.margin = "0";
+    document.body.style.overflow = "hidden";
 
+    imageMode(CENTER);
+    textAlign(CENTER, CENTER);
+
+    for (let file of characterFiles) {
+        images.push(await loadImage("assets/images/" + file));
+    }
+
+    startTournament();
 }
-
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
