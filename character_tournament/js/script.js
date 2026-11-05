@@ -15,7 +15,7 @@ const characterFiles = [
     "Silver.png", "ClevelandBrownJr.png", "muscleman.png", "walter.png"
 ];
 
-let images = [];       // one loaded png for each file in characterFiles
+let images = []; // one loaded png for each file in characterFiles
 let contenders = [];   // the line of characters still in it (positions in images), the first two are fighting
 let eliminated = [];   // everyone who has lost, in the order they lost
 
