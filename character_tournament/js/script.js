@@ -12,7 +12,7 @@ const characterFiles = [
     "Raiden.png", "Noctis.png", "Squall.png", "James.png", "Dante.png",
     "Leon.png", "Chris.png", "Luigi.png", "Makoto.png", "Riku.png",
     "Gackt.png", "Miku.png", "Roxas.png", "N.png", "Sayori.png",
-    "Silver.png", "brown.png", "muscleman.png", "walter.png"
+    "Silver.png", "ClevelandBrownJr.png", "muscleman.png", "walter.png"
 ];
 
 let images = [];       // one loaded png for each file in characterFiles
@@ -20,6 +20,23 @@ let contenders = [];   // the line of characters still in it (positions in image
 let eliminated = [];   // everyone who has lost, in the order they lost
 
 let flash = 0;   // how bright the white flash is
+
+//sets up the canvas, loads all the pngs, and starts the tournament.
+
+async function setup() {
+    createCanvas(windowWidth, windowHeight);
+    document.body.style.margin = "0";
+    document.body.style.overflow = "hidden";
+
+    imageMode(CENTER);
+    textAlign(CENTER, CENTER);
+
+    for (let file of characterFiles) {
+        images.push(await loadImage("assets/images/" + file));
+    }
+
+    startTournament();
+}
 
 
 /**
