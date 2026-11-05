@@ -255,6 +255,13 @@ Last one standing wins!
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/character_tournament/js/script.js)
 
 
+## Loops Challenge
+
+[Link to Loops Challenge](./LoopsChallenge/index.html)
+
+>![Image of Gradient](./topics/version-control/version-control-workflow/assets/images/gradientss.png)
+
+[Link to Code]()
 
 
 # > [Check out my journal!](./journal.md)
