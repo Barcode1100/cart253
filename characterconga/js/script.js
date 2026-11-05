@@ -108,3 +108,27 @@ function draw() {
     shake *= 0.9;
     flash *= 0.88;
 }
+
+// Returns true if the character is still doing their entrance thing
+
+function isPosing(follower) {
+    return millis() - follower.born < follower.poseTime;
+}
+
+// returns a new character, most start 1.8x bigger at a random spot near the middle
+//Gackt starts in the middle and is larger while he also poses longer cause hes special.
+
+function createFollower(img, isGackt) {
+    return {
+        img: img,
+        isGackt: isGackt,
+        born: millis(),
+        poseTime: isGackt ? 2500 : 700,
+        grow: isGackt ? height / characterSize : 1.8,
+        x: isGackt ? width / 2 : random(width * 0.25, width * 0.75),
+        y: isGackt ? height / 2 : random(height * 0.35, height * 0.65),
+        w: characterSize * img.width / img.height,   // keeps the png's shape
+        h: characterSize                             // every character is the same height
+    };
+}
+
