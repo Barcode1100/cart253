@@ -132,3 +132,15 @@ function createFollower(img, isGackt) {
     };
 }
 
+//returns a position that is closer to thee target 
+
+function chase(position, target, speed) {
+    return lerp(position, target, speed);
+}
+
+//draws a character which is scaled by how big it still is from its entrance
+
+function drawFollower(follower) {
+    image(follower.img, follower.x, follower.y, follower.w * follower.grow, follower.h * follower.grow);
+}
+
