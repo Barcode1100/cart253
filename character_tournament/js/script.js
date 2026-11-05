@@ -116,3 +116,21 @@ function pickWinner(side) {
     }
 }
 
+// Click a side to pick that character, or click to start again once theres a winner
+function mousePressed() {
+    if (contenders.length === 1) {
+        startTournament();
+        return;
+    }
+
+    if (mouseX < width / 2) {
+        pickWinner(0);
+    } else {
+        pickWinner(1);
+    }
+}
+
+// Keeps the sketch filling the browser window
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
