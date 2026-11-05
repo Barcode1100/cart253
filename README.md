@@ -261,7 +261,7 @@ Last one standing wins!
 
 >![Image of Gradient](./topics/version-control/version-control-workflow/assets/images/gradientss.png)
 
-[Link to Code]()
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/LoopsChallenge/js/script.js)
 
 
 # > [Check out my journal!](./journal.md)
