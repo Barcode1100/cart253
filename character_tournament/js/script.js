@@ -74,3 +74,24 @@ function startTournament() {
     contenders = shuffle(all);
     eliminated = [];
 }
+
+//returns name of the character just without the png part
+
+function characterName(index) {
+    return characterFiles[index].replace(".png", "");
+}
+
+// Draws one character at the given spot and height, with their name underneath.
+
+function drawCharacter(index, x, y, h) {
+    const img = images[index];
+
+    image(img, x, y, h * img.width / img.height, h);
+
+    fill(255);
+    noStroke();
+    textSize(height * 0.04);
+    text(characterName(index), x, y + h / 2 + height * 0.05);
+}
+
+
