@@ -19,6 +19,8 @@ let images = [];       // one loaded png for each file in characterFiles
 let contenders = [];   // the line of characters still in it (positions in images), the first two are fighting
 let eliminated = [];   // everyone who has lost, in the order they lost
 
+let flash = 0;   // how bright the white flash is
+
 
 /**
  * runs every frame. shows the two fighters while the tournament is going,
@@ -94,4 +96,23 @@ function drawCharacter(index, x, y, h) {
     text(characterName(index), x, y + h / 2 + height * 0.05);
 }
 
+//Picks a winner (side 0 is the left character, 1 is the right).
+//Both leave the front of the line, the winner goes to the back, and the loser is out. Classic array behaviour
+
+function pickWinner(side) {
+    const winner = contenders[side];
+    const loser = contenders[1 - side];
+
+    contenders.shift();
+    contenders.shift();
+    contenders.push(winner);
+    eliminated.push(loser);
+
+    // A bigger flash for the final result
+    if (contenders.length === 1) {
+        flash = 255;
+    } else {
+        flash = 100;
+    }
+}
 
