@@ -220,6 +220,40 @@ Ball
 
 [Link to Code](https://github.com/Barcode1100/cart253/blob/main/Boingo/js/script.js)
 
+## Array Prototypes
+
+### Prototype 1
+
+[Link to Sonic Bounce](./sonicbounce_project/index.html)
+
+Click the screen to summon erratically bouncing sonic characters!
+
+>![Image of Sonic Bounce](./topics/version-control/version-control-workflow/assets/images/bouncess.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/sonicbounce_project/js/script.js)
+
+### Prototype 2
+
+[Link to Character Conga](./characterconga/index.html)
+
+Click the screen to add one of 23 characters to your conga line! 
+(One is more special than the others, see if you can find him...)
+
+>![Image of Character Conga](./topics/version-control/version-control-workflow/assets/images/congass.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/characterconga/js/script.js)
+
+### Prototype 3
+
+[Link to Character Tournament](./character_tournament/index.html)
+
+A versus tournament where you get to decide the strongest, best character! 
+Last one standing wins!
+
+>![Image of Tournament](./topics/version-control/version-control-workflow/assets/images/tournamentss.png)
+
+[Link to Code](https://github.com/Barcode1100/cart253/blob/main/character_tournament/js/script.js)
+
 
 
 
